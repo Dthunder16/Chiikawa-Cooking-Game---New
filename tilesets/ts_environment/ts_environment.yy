@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"ts_environment",
-  "out_columns":10,
+  "out_columns":19,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"tileset",
-    "path":"sprites/tileset/tileset.yy",
+    "name":"chikawatilenew_export",
+    "path":"sprites/chikawatilenew_export/chikawatilenew_export.yy",
   },
   "spriteNoExport":true,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":108,
+  "tile_count":372,
 }
