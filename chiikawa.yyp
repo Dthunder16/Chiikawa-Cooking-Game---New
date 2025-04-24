@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"chikawa_cooking_simulator",
+  "%Name":"chiikawa",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -44,7 +44,7 @@
   "MetaData":{
     "IDEVersion":"2024.13.1.193",
   },
-  "name":"chikawa_cooking_simulator",
+  "name":"chiikawa",
   "resources":[
     {"id":{"name":"pixel_font","path":"fonts/pixel_font/pixel_font.yy",},},
     {"id":{"name":"obj_animal_par","path":"objects/obj_animal_par/obj_animal_par.yy",},},
@@ -94,7 +94,7 @@
     {"id":{"name":"chikawa_right","path":"sprites/chikawa_right/chikawa_right.yy",},},
     {"id":{"name":"chikawa_up_idle","path":"sprites/chikawa_up_idle/chikawa_up_idle.yy",},},
     {"id":{"name":"chikawa_up","path":"sprites/chikawa_up/chikawa_up.yy",},},
-    {"id":{"name":"chikawatilenew_export","path":"sprites/chikawatilenew_export/chikawatilenew_export.yy",},},
+    {"id":{"name":"chikawatilenew","path":"sprites/chikawatilenew/chikawatilenew.yy",},},
     {"id":{"name":"hachiware_64","path":"sprites/hachiware_64/hachiware_64.yy",},},
     {"id":{"name":"hachiware_idle","path":"sprites/hachiware_idle/hachiware_idle.yy",},},
     {"id":{"name":"hachiware_sad","path":"sprites/hachiware_sad/hachiware_sad.yy",},},
@@ -112,6 +112,7 @@
     {"id":{"name":"spr_strawberryicecream","path":"sprites/spr_strawberryicecream/spr_strawberryicecream.yy",},},
     {"id":{"name":"textbox_chikawa","path":"sprites/textbox_chikawa/textbox_chikawa.yy",},},
     {"id":{"name":"textbox_hachiware","path":"sprites/textbox_hachiware/textbox_hachiware.yy",},},
+    {"id":{"name":"tileset","path":"sprites/tileset/tileset.yy",},},
     {"id":{"name":"usagi_idle","path":"sprites/usagi_idle/usagi_idle.yy",},},
     {"id":{"name":"ts_environment","path":"tilesets/ts_environment/ts_environment.yy",},},
   ],

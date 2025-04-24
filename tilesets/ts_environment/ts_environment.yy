@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"chikawatilenew_export",
-    "path":"sprites/chikawatilenew_export/chikawatilenew_export.yy",
+    "name":"chikawatilenew",
+    "path":"sprites/chikawatilenew/chikawatilenew.yy",
   },
   "spriteNoExport":true,
   "textureGroupId":{
