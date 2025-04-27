@@ -13,6 +13,7 @@
     {"name":"inst_408B08A3","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_2E2D5558","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_4E4C34F9","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_3BB682F5","path":"rooms/rm_game/rm_game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -24,6 +25,7 @@
         {"$GMRInstance":"v2","%Name":"inst_408B08A3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_408B08A3","objectId":{"name":"obj_kuri","path":"objects/obj_kuri/obj_kuri.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":118.0,},
         {"$GMRInstance":"v2","%Name":"inst_2E2D5558","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E2D5558","objectId":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":598.0,"y":-25.0,},
         {"$GMRInstance":"v2","%Name":"inst_4E4C34F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E4C34F9","objectId":{"name":"obj_chicken","path":"objects/obj_chicken/obj_chicken.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":192.0,},
+        {"$GMRInstance":"v2","%Name":"inst_3BB682F5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3BB682F5","objectId":{"name":"obj_day_cycle","path":"objects/obj_day_cycle/obj_day_cycle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":32.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":75,"SerialiseWidth":100,"TileCompressedData":[
           -909,-2147483648,4,13,14,15,16,-96,-2147483648,4,22,97,97,34,-96,-2147483648,4,31,97,97,25,-17,-2147483648,

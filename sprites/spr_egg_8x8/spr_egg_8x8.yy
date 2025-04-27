@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"Food",
-    "path":"folders/Sprites/Food.yy",
+    "name":"8x8",
+    "path":"folders/Sprites/Raw Materials/8x8.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

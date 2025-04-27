@@ -1,6 +1,26 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Raw Materials","order":1,"path":"folders/Sprites/Raw Materials.yy",},
+    {"name":"32x32","order":3,"path":"folders/Sprites/Raw Materials/32x32.yy",},
+    {"name":"8x8","order":4,"path":"folders/Sprites/Raw Materials/8x8.yy",},
+  ],
   "ResourceOrderSettings":[
+    {"name":"obj_day_cycle","order":1,"path":"objects/obj_day_cycle/obj_day_cycle.yy",},
     {"name":"chikawatilenew","order":1,"path":"sprites/chikawatilenew/chikawatilenew.yy",},
+    {"name":"spr_applepie","order":12,"path":"sprites/spr_applepie/spr_applepie.yy",},
+    {"name":"spr_candyapple","order":2,"path":"sprites/spr_candyapple/spr_candyapple.yy",},
+    {"name":"spr_creampuff","order":8,"path":"sprites/spr_creampuff/spr_creampuff.yy",},
+    {"name":"spr_fishonigiri","order":13,"path":"sprites/spr_fishonigiri/spr_fishonigiri.yy",},
+    {"name":"spr_grilledfish","order":14,"path":"sprites/spr_grilledfish/spr_grilledfish.yy",},
+    {"name":"spr_icecream","order":7,"path":"sprites/spr_icecream/spr_icecream.yy",},
+    {"name":"spr_omurice","order":15,"path":"sprites/spr_omurice/spr_omurice.yy",},
+    {"name":"spr_onigiri","order":16,"path":"sprites/spr_onigiri/spr_onigiri.yy",},
+    {"name":"spr_pancake","order":9,"path":"sprites/spr_pancake/spr_pancake.yy",},
+    {"name":"spr_pudding_ani","order":10,"path":"sprites/spr_pudding_ani/spr_pudding_ani.yy",},
+    {"name":"spr_pudding","order":3,"path":"sprites/spr_pudding/spr_pudding.yy",},
+    {"name":"spr_salmonsushi","order":17,"path":"sprites/spr_salmonsushi/spr_salmonsushi.yy",},
+    {"name":"spr_strawberryicecream","order":6,"path":"sprites/spr_strawberryicecream/spr_strawberryicecream.yy",},
+    {"name":"spr_takoyaki","order":18,"path":"sprites/spr_takoyaki/spr_takoyaki.yy",},
+    {"name":"spr_tempura","order":11,"path":"sprites/spr_tempura/spr_tempura.yy",},
   ],
 }
