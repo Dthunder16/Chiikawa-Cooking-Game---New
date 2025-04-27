@@ -5,7 +5,7 @@
     {"name":"8x8","order":4,"path":"folders/Sprites/Raw Materials/8x8.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_day_cycle","order":1,"path":"objects/obj_day_cycle/obj_day_cycle.yy",},
+    {"name":"obj_daynight","order":1,"path":"objects/obj_daynight/obj_daynight.yy",},
     {"name":"chikawatilenew","order":1,"path":"sprites/chikawatilenew/chikawatilenew.yy",},
     {"name":"spr_applepie","order":12,"path":"sprites/spr_applepie/spr_applepie.yy",},
     {"name":"spr_candyapple","order":2,"path":"sprites/spr_candyapple/spr_candyapple.yy",},
