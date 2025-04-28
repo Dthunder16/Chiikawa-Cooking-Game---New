@@ -1,67 +1,43 @@
 depth = -9999;
 
+//item constructor
+function create_item(_name, _desc, _spr, _spr_in_game) constructor {
+	name = _name;
+	description = _desc;
+	sprite = _spr;
+	sprite_in_game = _spr_in_game;
+}
+
+
+
 //Materials
-apple = 
-	{
-		name: "Apple",
-		description: "A crisp, juicy apple that adds a touch of sweetness and a crunch to any dish.",
-		sprite: spr_apple
-	}
-
-egg = 
-	{
-		name: "Egg",
-		description: "A crisp, juicy apple that adds a touch of sweetness and a crunch to any dish.",
-		sprite: spr_apple
-	}
-
+global.raw_materials = 
+{
+	egg : new create_item(
+		"Egg",
+		"It's an egg! Try not to crack it!",
+		spr_egg,
+		spr_egg_8x8
+		),
+	
+}
 
 //Recipes - Completed Foods
-apple_icecream = 
+global.food = 
+{
+	apple_icecream :
 	{
 		name: "Apple Ice Cream",
 		description: "",
-		sprite: apple_icecream
+		sprite: spr_appleicecream
 	}
+}
 
-candy_apple = 
-	{
-		name: "Candy Apple",
-		description: "A crisp, juicy apple dipped into a delicious coat of crunchy sweetness! Perfect for a snack!",
-		sprite: spr_candyapple
-	}
+//Drawing & Mouse Pos
+sep = 64;
+screen_bord = 32;
 
-cream_puff = 
-	{
-		name: "Cream Puff",
-		description: "",
-		sprite: spr_creampuff
-	}
+selected_item = -1;
 
-ice_cream = 
-	{
-		name: "Ice Cream",
-		description: "",
-		sprite: spr_creampuff
-	}
-
-pancake = 
-	{
-		name: "Pancake",
-		description: "",
-		sprite: spr_pancake
-	}
-
-pudding = 
-	{
-		name: "Pudding",
-		description: "",
-		sprite: spr_pudding
-	}
-
-strawberry_icecream = 	
-	{
-		name: "Strawberry Ice Cream",
-		description: "",
-		sprite: spr_strawberryicecream
-	}
+//Create Inventory
+inv = array_create(0);

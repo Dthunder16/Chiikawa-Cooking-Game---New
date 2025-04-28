@@ -10,8 +10,8 @@
   "name":"obj_daynight",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Day & Night Cycle",
+    "path":"folders/Day & Night Cycle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

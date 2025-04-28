@@ -67,6 +67,3 @@ if(!stop_movement){
 		obj_camera.target_y += vSpeedCam;
 	}
 }
-
-//Pick Up Code
-

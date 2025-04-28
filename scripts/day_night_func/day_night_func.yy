@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Functions",
+  "%Name":"day_night_func",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Functions",
+  "name":"day_night_func",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Day & Night Cycle",
+    "path":"folders/Day & Night Cycle.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
