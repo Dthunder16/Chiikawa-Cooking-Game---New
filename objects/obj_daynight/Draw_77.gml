@@ -39,6 +39,6 @@ var _t = cos_ext(time_of_day * time_multiplier, 0, 1);
 
 shader_set_uniform_f(shader_get_uniform(sh_daynight, "time_of_day"), _t);
 
-draw_surface(application_surface, 0, 0);
+draw_surface(application_surface, -180, -150);
 
 shader_reset();
