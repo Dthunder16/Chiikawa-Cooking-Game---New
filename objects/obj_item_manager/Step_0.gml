@@ -3,9 +3,12 @@ selected_item = -1;
 
 for(var i = 0; i < array_length(inv); i++){
 	var _x = screen_bord;
-	var _y = screen_bord + sep * i;
+	var _y = screen_bord + (sep * i);
 	
-	if(mouse_x > _x && mouse_x < _x + 64 && mouse_y > _y && mouse_y < _y + 64){
+	var _w = 64;
+	var _h = 64;
+	
+	if(device_mouse_x_to_gui(0) > _x && device_mouse_x_to_gui(0) < _x + _w && device_mouse_y_to_gui(0) > _y && device_mouse_y_to_gui(0) < _y + _h){
 		selected_item = i;
 		show_debug_message(selected_item);
 	}
