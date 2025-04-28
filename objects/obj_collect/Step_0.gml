@@ -13,3 +13,6 @@ if(place_meeting(x,y,obj_player)){
 	//Destroy Instance
 	instance_destroy(id);
 }
+
+
+//test test test test tiles test 
