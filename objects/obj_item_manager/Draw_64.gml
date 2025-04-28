@@ -28,3 +28,5 @@ for(var i = 0; i < array_length(inv); i++){
 	
 	draw_set_color(c_white);
 }
+
+draw_set_font(pixel_font);
