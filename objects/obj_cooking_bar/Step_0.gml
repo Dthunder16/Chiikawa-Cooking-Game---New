@@ -1,7 +1,7 @@
 vspeed += gravity;
 
 
-if (random(1) < 0.09) {
+if (random(1) < 0.07) {
     vspeed += jump_force;
 }
 

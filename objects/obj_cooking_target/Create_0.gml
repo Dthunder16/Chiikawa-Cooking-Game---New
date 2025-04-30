@@ -4,5 +4,5 @@ jump_force = -2;
 
 
 //boundaries for movement
-y_min = 100;
-y_max = 600;
+y_min = 150;
+y_max = 550;
