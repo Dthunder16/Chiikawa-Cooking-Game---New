@@ -33,7 +33,13 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "spriteId":{
+    "name":"chicken_down_idle",
+    "path":"sprites/chicken_down_idle/chicken_down_idle.yy",
+  },
+  "spriteMaskId":{
+    "name":"chicken_down_idle",
+    "path":"sprites/chicken_down_idle/chicken_down_idle.yy",
+  },
   "visible":true,
 }
