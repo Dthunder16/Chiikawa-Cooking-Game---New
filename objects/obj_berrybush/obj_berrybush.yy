@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_apple",
-  "eventList":[],
+  "%Name":"obj_berrybush",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_apple",
+  "name":"obj_berrybush",
   "overriddenProperties":[],
   "parent":{
-    "name":"Collectibles",
-    "path":"folders/Objects/Collectibles.yy",
+    "name":"Environment",
+    "path":"folders/Objects/Environment.yy",
   },
-  "parentObjectId":{
-    "name":"obj_collect",
-    "path":"objects/obj_collect/obj_collect.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_apple",
-    "path":"sprites/spr_apple/spr_apple.yy",
+    "name":"spr_berrybush",
+    "path":"sprites/spr_berrybush/spr_berrybush.yy",
   },
   "spriteMaskId":null,
   "visible":true,

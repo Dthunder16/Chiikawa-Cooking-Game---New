@@ -6,8 +6,8 @@
   "name":"obj_campfire_big",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"Cooking UI",
+    "path":"folders/Objects/Cooking UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

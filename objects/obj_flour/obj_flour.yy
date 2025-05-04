@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_apple",
+  "%Name":"obj_flour",
   "eventList":[],
   "managed":true,
-  "name":"obj_apple",
+  "name":"obj_flour",
   "overriddenProperties":[],
   "parent":{
     "name":"Collectibles",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_apple",
-    "path":"sprites/spr_apple/spr_apple.yy",
+    "name":"spr_flour",
+    "path":"sprites/spr_flour/spr_flour.yy",
   },
   "spriteMaskId":null,
   "visible":true,
