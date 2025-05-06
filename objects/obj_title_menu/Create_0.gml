@@ -14,3 +14,5 @@ option[1] = "Settings";
 option[2] = "Quit Game";
 
 op_length = array_length(option);
+
+audio_play_sound(bgm_menu,1,1,1);

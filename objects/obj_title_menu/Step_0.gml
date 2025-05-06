@@ -15,6 +15,7 @@ if(accept_key) {
 	switch(pos){
 		case 0: //Start Game
 			room_goto(rm_game);
+			audio_pause_all();
 			break;
 		
 		case 1: //Settings

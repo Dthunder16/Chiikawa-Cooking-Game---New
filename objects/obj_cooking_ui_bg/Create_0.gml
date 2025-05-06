@@ -1,0 +1,1 @@
+audio_play_sound(bgm_cooking,1,1,1);

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_strawberry",
-    "path":"sprites/spr_strawberry/spr_strawberry.yy",
+    "name":"spr_strawberry_8x8",
+    "path":"sprites/spr_strawberry_8x8/spr_strawberry_8x8.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_berry",
-    "path":"sprites/spr_berry/spr_berry.yy",
+    "name":"spr_berry_8x8",
+    "path":"sprites/spr_berry_8x8/spr_berry_8x8.yy",
   },
   "spriteMaskId":null,
   "visible":true,

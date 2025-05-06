@@ -16,7 +16,7 @@ switch(sprite_index){
 		item = global.raw_materials.apple;
 		pick_up_item(item);
 		break;
-	case (spr_berry):
+	case (spr_berry_8x8):
 		item = global.raw_materials.berry;
 		pick_up_item(item);
 		break;
@@ -36,7 +36,7 @@ switch(sprite_index){
 		item = global.raw_materials.rice;
 		pick_up_item(item);
 		break;
-	case (spr_strawberry):
+	case (spr_strawberry_8x8):
 		item = global.raw_materials.strawberry;
 		pick_up_item(item);
 		break;

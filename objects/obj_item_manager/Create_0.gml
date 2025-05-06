@@ -32,8 +32,8 @@ global.raw_materials =
 	berry: new create_item(
 		"Berry",
 		"A berry! Today's weather is berry nice, isn't it?",
-		spr_egg_64,
-		spr_berry,
+		spr_berry_64,
+		spr_berry_8x8,
 		0
 		),
 	butter: new create_item(
@@ -67,8 +67,8 @@ global.raw_materials =
 	strawberry: new create_item(
 		"Strawberry",
 		"Berries and cream berries and cream, I'm a little lad who loves berries and cream",
-		spr_egg_64,
-		spr_strawberry,
+		spr_strawberry_64,
+		spr_strawberry_8x8,
 		0
 		),
 	tomato: new create_item(

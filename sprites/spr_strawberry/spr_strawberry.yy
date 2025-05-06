@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"8x8",
-    "path":"folders/Sprites/Raw Materials/8x8.yy",
+    "name":"64x64",
+    "path":"folders/Sprites/Raw Materials/64x64.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
