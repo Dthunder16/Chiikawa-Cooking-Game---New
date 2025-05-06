@@ -15,6 +15,7 @@
     {"name":"Backgrounds","order":8,"path":"folders/Sprites/Backgrounds.yy",},
     {"name":"Cooking UI","order":6,"path":"folders/Sprites/Cooking UI.yy",},
     {"name":"Environment","order":2,"path":"folders/Sprites/Environment.yy",},
+    {"name":"Recipe UI","order":9,"path":"folders/Sprites/Recipe UI.yy",},
     {"name":"Raw Materials","order":1,"path":"folders/Sprites/Raw Materials.yy",},
     {"name":"64x64","order":3,"path":"folders/Sprites/Raw Materials/64x64.yy",},
     {"name":"8x8","order":4,"path":"folders/Sprites/Raw Materials/8x8.yy",},

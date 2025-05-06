@@ -30,3 +30,93 @@ for(var i = 0; i < array_length(inv); i++){
 }
 
 draw_set_font(pixel_font);
+
+//Recipe code
+if(isOpen = false){
+    //closed UI for recipe quest, clear the surface
+    draw_sprite(spr_recipe_button,0,surfaceXpos,surfaceYpos);
+    surface_free(recipeSurface);
+    heightCounter = 0;
+}else{
+    //draw opened UI for recipe quest
+    //create the surface for recipes
+    if(!surface_exists(recipeSurface)){
+        recipeSurface = surface_create(width,1);
+    }
+    //animation for recipe surface
+    if(surface_get_height(recipeSurface)<maxHeight){
+        heightCounter += rate/game_get_speed(gamespeed_fps);
+        surface_resize(recipeSurface,width,heightCounter);
+    }else{
+        surface_resize(recipeSurface,width,maxHeight);
+    }
+    //set following drawing into the recipeSurface
+    surface_set_target(recipeSurface);
+    //set color for the surface (this can be replaced by sprite in further development)
+    draw_clear_alpha(c_black,1);
+	
+//The recipe part
+    for(var i = 0; i<ds_list_size(recipeList); i++){
+        //Initialize necessary Parameters
+        var _owncol = c_blue;
+        var _misscol = c_white;
+        var _recipecol = c_green;
+        var _x = initialXPos;
+        var _sep = sepRecipe;
+        var _xoffset = ingredientXOffset;
+        draw_set_font(pixel_font_big);
+
+        //Recipe Name
+        var curRecipe = ds_list_find_value(recipeList,i);
+        draw_set_color(_recipecol);
+        draw_text(_x,initialYPos,curRecipe.name);
+
+        //var to track whether all ingredients are gathered
+        var _ingrecount = 0;
+
+        //Ingredient List
+        for(var j =0; j< array_length(curRecipe.ingredients); j++){
+            //set the ingredient to find in the inv and count of the ingredient
+            var _item_to_find = curRecipe.ingredients[j];
+            var _count = 0;
+
+            //find ingredient
+            if(array_contains(inv,_item_to_find)){
+                draw_set_color(_owncol);
+                _ingrecount ++;
+            }else{
+                draw_set_color(_misscol);
+            }
+
+            //check number of ingredient
+            for (var k = 0; k < array_length(inv); k++) {
+                if (inv[k] == _item_to_find) {
+                    _count++;
+                }
+            }
+
+            //draw ingredient and its count
+            draw_text(_x+_xoffset,initialYPos+_sep*(j+1),curRecipe.ingredients[j].name);
+            draw_text(_x+30*_xoffset,initialYPos+_sep*(j+1),_count);
+		}
+		//draw the check icon if all ingredients are gathered
+        if(_ingrecount = array_length(curRecipe.ingredients)){
+            draw_sprite(arrow,0,_x-5*_xoffset,initialYPos);
+        }
+
+        //Recipe Icon
+        var _recipespr = curRecipe.sprite;
+        draw_sprite(_recipespr,0,_x+30*_xoffset,initialYPos);
+
+        //Set Ypos for next Recipe
+        initialYPos += ((1+array_length(curRecipe.ingredients))*_sep+_sep) ;
+    }
+    //Reset Ypos for next draw function
+    initialYPos = 10;
+
+    //reset draw to general GUI
+    surface_reset_target()
+    draw_surface(recipeSurface,surfaceXpos,surfaceYpos);
+}
+
+draw_set_font(pixel_font);

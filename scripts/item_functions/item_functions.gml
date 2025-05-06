@@ -14,3 +14,7 @@ function pick_up_item(_item){
 		instance_destroy();
 	}
 }
+
+function recipe_add(_recipe){
+	ds_list_add(obj_item_manager.recipeList,_recipe);
+}

@@ -13,3 +13,8 @@ for(var i = 0; i < array_length(inv); i++){
 		show_debug_message(selected_item);
 	}
 }
+
+//function to open and close recipe list
+if(keyboard_check_pressed(ord("Q"))){
+    isOpen = !isOpen;
+}

@@ -97,7 +97,16 @@ global.food =
 	{
 		name: "Apple Ice Cream",
 		description: "",
-		sprite: spr_appleicecream
+		sprite: spr_appleicecream,
+		ingredients: [global.raw_materials.egg, global.raw_materials.apple]
+	},
+	
+	apple_pie :
+	{
+		name: "Apple Pie",
+		description: "",
+		sprite: spr_appleicecream,
+		ingredients: [global.raw_materials.egg, global.raw_materials.apple]
 	}
 }
 
@@ -109,3 +118,21 @@ selected_item = -1;
 
 //Create Inventory
 inv = array_create(0);
+
+//updatedcodeMay6th
+//Create Recipe Inventory
+recipeList = ds_list_create();
+//Drawing Pos for Recipe
+initialYPos = 10;
+initialXPos = 10; //ingredient position relative to surface
+sepRecipe = 40; //sepration between recipes
+ingredientXOffset = 10; 
+//Bool to control open and close of recipe page
+isOpen = false;
+rate = 500; //animation speed
+width = 350;
+maxHeight = 300; //surface height and width
+heightCounter = 0; //counter for surface animation
+recipeSurface = surface_create(width,maxHeight); //create the surface
+surfaceXpos = display_get_gui_width() - 8*screen_bord; 
+surfaceYpos = 10; //surface position relative to GUI
