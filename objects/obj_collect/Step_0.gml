@@ -12,7 +12,7 @@ sprite = sprite_index;
 item = noone;
 
 switch(sprite_index){
-	case (spr_egg):
+	case (spr_egg_8x8):
 		item = global.raw_materials.egg;
 		pick_up_item(item);
 		break;

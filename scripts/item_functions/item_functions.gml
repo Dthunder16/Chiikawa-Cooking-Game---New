@@ -15,6 +15,17 @@ function pick_up_item(_item){
 	}
 }
 
+//Check if something is in the function
+function in_inventory(_item){
+	for(var i = 0; i < array_size(obj_item_manager.inv); i++){
+		if(_item == obj_item_manager.inv[i])
+			return true;
+		else
+			return false;
+	}
+}
+
+
 function recipe_add(_recipe){
 	ds_list_add(obj_item_manager.recipeList,_recipe);
 }

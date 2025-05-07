@@ -119,7 +119,7 @@ if(isOpen = false){
     initialYPos = 10;
 
     //reset draw to general GUI
-    surface_reset_target()
+    surface_reset_target();
     draw_surface(recipeSurface,surfaceXpos,surfaceYpos);
 	
 }
