@@ -123,8 +123,8 @@ inv = array_create(0);
 //Create Recipe Inventory
 recipeList = ds_list_create();
 //Drawing Pos for Recipe
-initialYPos = 10;
-initialXPos = 10; //ingredient position relative to surface
+initialYPos = 20;
+initialXPos = 20; //ingredient position relative to surface
 sepRecipe = 40; //sepration between recipes
 ingredientXOffset = 10; 
 //Bool to control open and close of recipe page

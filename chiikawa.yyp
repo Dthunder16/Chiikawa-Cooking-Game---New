@@ -183,6 +183,7 @@
     {"id":{"name":"spr_pancake","path":"sprites/spr_pancake/spr_pancake.yy",},},
     {"id":{"name":"spr_pudding_ani","path":"sprites/spr_pudding_ani/spr_pudding_ani.yy",},},
     {"id":{"name":"spr_pudding","path":"sprites/spr_pudding/spr_pudding.yy",},},
+    {"id":{"name":"spr_recipe_bg","path":"sprites/spr_recipe_bg/spr_recipe_bg.yy",},},
     {"id":{"name":"spr_recipe_button","path":"sprites/spr_recipe_button/spr_recipe_button.yy",},},
     {"id":{"name":"spr_rice","path":"sprites/spr_rice/spr_rice.yy",},},
     {"id":{"name":"spr_salmonsushi","path":"sprites/spr_salmonsushi/spr_salmonsushi.yy",},},

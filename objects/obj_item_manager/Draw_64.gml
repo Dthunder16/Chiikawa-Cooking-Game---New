@@ -1,7 +1,6 @@
 //Font
 draw_set_font(pixel_font_big);
 
-
 for(var i = 0; i < array_length(inv); i++){
 	
 	var _x = screen_bord;
@@ -37,6 +36,9 @@ if(isOpen = false){
     draw_sprite(spr_recipe_button,0,surfaceXpos,surfaceYpos);
     surface_free(recipeSurface);
     heightCounter = 0;
+	draw_set_font(pixel_font_big);
+	draw_text(initialXPos+1210,initialYPos+15,"Press Q to");
+	draw_text(initialXPos+1210,initialYPos+40,"view recipes");
 }else{
     //draw opened UI for recipe quest
     //create the surface for recipes
@@ -52,15 +54,17 @@ if(isOpen = false){
     }
     //set following drawing into the recipeSurface
     surface_set_target(recipeSurface);
-    //set color for the surface (this can be replaced by sprite in further development)
-    draw_clear_alpha(c_black,1);
+	
+	
+	// Draw your sprite onto the surface (example)
+	draw_sprite(spr_recipe_bg, 0, 0, 0);
 	
 //The recipe part
     for(var i = 0; i<ds_list_size(recipeList); i++){
         //Initialize necessary Parameters
-        var _owncol = c_blue;
+        var _owncol = #95ff30;
         var _misscol = c_white;
-        var _recipecol = c_green;
+        var _recipecol = #a3fbff;
         var _x = initialXPos;
         var _sep = sepRecipe;
         var _xoffset = ingredientXOffset;
@@ -106,7 +110,7 @@ if(isOpen = false){
 
         //Recipe Icon
         var _recipespr = curRecipe.sprite;
-        draw_sprite(_recipespr,0,_x+30*_xoffset,initialYPos);
+        draw_sprite(_recipespr,0,(width-initialXPos-20),initialYPos);
 
         //Set Ypos for next Recipe
         initialYPos += ((1+array_length(curRecipe.ingredients))*_sep+_sep) ;
@@ -117,6 +121,10 @@ if(isOpen = false){
     //reset draw to general GUI
     surface_reset_target()
     draw_surface(recipeSurface,surfaceXpos,surfaceYpos);
+	
 }
 
+
+
+draw_set_color(c_white);
 draw_set_font(pixel_font);

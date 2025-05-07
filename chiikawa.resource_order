@@ -90,6 +90,7 @@
     {"name":"spr_pancake","order":9,"path":"sprites/spr_pancake/spr_pancake.yy",},
     {"name":"spr_pudding_ani","order":10,"path":"sprites/spr_pudding_ani/spr_pudding_ani.yy",},
     {"name":"spr_pudding","order":3,"path":"sprites/spr_pudding/spr_pudding.yy",},
+    {"name":"spr_recipe_bg","order":1,"path":"sprites/spr_recipe_bg/spr_recipe_bg.yy",},
     {"name":"spr_rice","order":5,"path":"sprites/spr_rice/spr_rice.yy",},
     {"name":"spr_salmonsushi","order":17,"path":"sprites/spr_salmonsushi/spr_salmonsushi.yy",},
     {"name":"spr_strawberry_64","order":5,"path":"sprites/spr_strawberry_64/spr_strawberry_64.yy",},
