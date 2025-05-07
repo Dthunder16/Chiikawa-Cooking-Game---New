@@ -16,18 +16,6 @@ if(distance_to_object(obj_player) <= 15){
 		if_interacted = false;
 		obj_player.stop_movement = false;
 	}
-	
-	//function to gain the recipe
-    if(hasRecipe = true && ds_list_size(recipeHold)!=0){
-        //hasRecipe ensures that only one recipe is gained each time approach to the npc
-        hasRecipe = false;
-        var _index = random_range(0,ds_list_size(recipeHold));
-        recipe_add(ds_list_find_value(recipeHold,_index));
-        //remove the given recipe
-        ds_list_delete(recipeHold,_index);
-    }
-}else{
-    hasRecipe = true;
 }
 
 

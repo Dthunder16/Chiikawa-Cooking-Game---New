@@ -4,24 +4,23 @@ function scr_game_text(_text_id){
 		
 		//---------------------------HACHIWARE---------------------------//
 		case "hachiware":
-			scr_text("Do you want to go on an adventure? Please say yes, please say yes.", "hachiware");
+			scr_text("Hi, I am Hachiware! Nice to meet you!.", "hachiware");
+			scr_text("I'm really craving a sweet treat right now...", "hachiware");
+			scr_text("Would you like to make me an apple flavoured sweet treat?", "hachiware");
 				scr_option("Yes!", "hachiware - yes");
 				scr_option("No!", "hachiware - no");
 			break;
 			case "hachiware - yes":	
-				scr_text("Yea of course. I would love to go on an adventure with you hachiware!", "chiikawa", -1);
-				scr_text("yay, lets go!! Lets go on an epic, fabulous adventure.", "hachiware");
+				scr_text("Yea of course. I would love to get you your icecream!", "chiikawa", -1);
+				scr_text("YAY! Come back soon, I'm hungry.", "hachiware");
+				
+				//Gain Recipe Code
+				gain_recipe(obj_hachiware.hasRecipe, obj_hachiware.recipeHold);
 				break;
 			case "hachiware - no":
 				scr_text("No thanks! I'm a little busy right now.", "chiikawa", -1);
 				scr_text(":c", "hachiware-sad");
 				break;
-		
-			
-			scr_text("Hehehe~ I drew a picture of us! Look, you're the roundest one!", "hachiware");
-			scr_text("Should we make matching flower crowns? I found purple ones today!");
-			scr_text("I stepped in mud… again. But it was kind of fun!", "hachiware");
-			scr_text("I like when the wind is soft like this. It feels like a hug~");
 			break;
 		
 		//---------------------------USAGI---------------------------//

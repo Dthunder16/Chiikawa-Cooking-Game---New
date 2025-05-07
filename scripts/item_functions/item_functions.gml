@@ -18,3 +18,15 @@ function pick_up_item(_item){
 function recipe_add(_recipe){
 	ds_list_add(obj_item_manager.recipeList,_recipe);
 }
+
+//Function to Gain Recipe
+function gain_recipe(hasRecipe, recipeHold){
+	if(hasRecipe = false && ds_list_size(recipeHold)!=0){
+		//hasRecipe ensures that only one recipe is gained each time approach to the npc
+		hasRecipe = true;
+		var _index = irandom(ds_list_size(recipeHold) - 1);
+		recipe_add(ds_list_find_value(recipeHold,_index));
+		//remove the given recipe
+		ds_list_delete(recipeHold,_index);
+	}
+}
