@@ -1,1 +1,2 @@
-ds_list_add(recipeHold,global.food.apple_icecream,global.food.apple_pie);
+//Recipes that Hachiware Holds
+ds_list_add(recipeHold,global.food.apple_icecream);

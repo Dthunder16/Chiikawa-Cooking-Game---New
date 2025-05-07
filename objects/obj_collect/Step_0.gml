@@ -12,6 +12,10 @@ sprite = sprite_index;
 item = noone;
 
 switch(sprite_index){
+	case (spr_egg):
+		item = global.raw_materials.egg;
+		pick_up_item(item);
+		break;
 	case (spr_apple):
 		item = global.raw_materials.apple;
 		pick_up_item(item);
@@ -42,6 +46,10 @@ switch(sprite_index){
 		break;
 	case (spr_vanilla):
 		item = global.raw_materials.vanilla;
+		pick_up_item(item);
+		break;
+	case (spr_tomato):
+		item = global.raw_materials.tomato;
 		pick_up_item(item);
 		break;
 }
