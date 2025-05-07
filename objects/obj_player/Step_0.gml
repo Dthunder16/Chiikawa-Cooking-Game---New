@@ -67,3 +67,14 @@ if(!stop_movement){
 		obj_camera.target_y += vSpeedCam;
 	}
 }
+
+
+//Walking Particle
+if((xprevious != x or yprevious != y) and canDust = true)
+{
+	canDust = false;
+	var randomTime = irandom_range(-1,2);
+	alarm_set(3, 8+randomTime);
+	
+	part_particles_create(obj_particle_setup.particle_system, x, y + (sprite_height/2), obj_particle_setup.particle_dust, 10);
+}
