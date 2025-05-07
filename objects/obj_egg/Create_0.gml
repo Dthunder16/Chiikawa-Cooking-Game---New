@@ -1,1 +1,1 @@
-item = global.raw_materials.egg;
+this_item = global.raw_materials.egg;
