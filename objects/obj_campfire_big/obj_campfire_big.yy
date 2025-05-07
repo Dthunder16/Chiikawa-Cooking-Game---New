@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_campfire_big",
-    "path":"sprites/spr_campfire_big/spr_campfire_big.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
