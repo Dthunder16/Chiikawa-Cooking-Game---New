@@ -1,5 +1,8 @@
 depth = -9999;
 
+//Initial Textbox Destroy
+initial_tbox = false;
+
 //Textbox Parameters
 textbox_width = 220;
 textbox_height = 64;
