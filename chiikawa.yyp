@@ -116,7 +116,7 @@
     {"id":{"name":"scr_textbox_func","path":"scripts/scr_textbox_func/scr_textbox_func.yy",},},
     {"id":{"name":"sh_daynight","path":"shaders/sh_daynight/sh_daynight.yy",},},
     {"id":{"name":"bgm_cooking","path":"sounds/bgm_cooking/bgm_cooking.yy",},},
-    {"id":{"name":"bgm_default","path":"sounds/bgm_default/bgm_default.yy",},},
+    {"id":{"name":"bgm_default2","path":"sounds/bgm_default2/bgm_default2.yy",},},
     {"id":{"name":"bgm_menu","path":"sounds/bgm_menu/bgm_menu.yy",},},
     {"id":{"name":"arrow","path":"sprites/arrow/arrow.yy",},},
     {"id":{"name":"chicken_down_idle","path":"sprites/chicken_down_idle/chicken_down_idle.yy",},},

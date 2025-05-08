@@ -9,6 +9,7 @@ if(distance_to_player < 50){
 if(keyboard_check(vk_space) && distance_to_player < 50)
 {
 	room_goto(rm_cooking)
+	audio_stop_all()
 }
 
 
