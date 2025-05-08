@@ -9,6 +9,7 @@ function pick_up_item(_item){
 	if(place_meeting(x,y,obj_player)){
 		//Add to Inventory Code
 		item_add(_item);
+		audio_play_sound(snd_collect_item,0,0);
 		//show_debug_message(array_length(obj_item_manager.inv));
 		//Destroy Instance
 		instance_destroy();

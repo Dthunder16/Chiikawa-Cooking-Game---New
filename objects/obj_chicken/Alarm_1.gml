@@ -1,0 +1,1 @@
+canSFX = true;

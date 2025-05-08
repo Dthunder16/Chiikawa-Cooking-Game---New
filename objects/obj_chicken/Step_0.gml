@@ -97,3 +97,17 @@ else{
         movement_state_timer = irandom_range(80, 300); // Random movement duration
     }
 }
+
+var distance_to_player = distance_to_object(obj_player)
+
+if(distance_to_player < 10){
+	//draw text that says press space to drop apples
+	
+}
+
+if(keyboard_check(vk_space) && distance_to_player < 50 && canSFX)
+{
+	canSFX = false;
+	audio_play_sound(snd_chicken,0,0);
+	alarm_set(1,20);
+}

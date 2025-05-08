@@ -9,3 +9,5 @@ function drop_apples(){
 	}
 	has_dropped_apples = true;
 }
+
+canSFX = true;

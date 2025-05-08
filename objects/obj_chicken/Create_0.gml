@@ -57,3 +57,5 @@ current_action = ChickenAction.IDLE;
 movement_state_timer = 600;
 action_state_timer = 800;
 is_moving = true;
+
+canSFX = true;
