@@ -15,6 +15,12 @@ if(distance_to_player < 10){
 if(keyboard_check(vk_space) && distance_to_player < 50)
 {
 	drop_apples();
+	if(canSFX = true)
+	{
+		canSFX = false;
+		audio_play_sound(snd_tree,0,0);
+		alarm_set(1,20);
+	}
 }
 
 

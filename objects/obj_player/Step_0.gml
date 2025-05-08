@@ -17,18 +17,23 @@ vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 hSpeedCam = hSpeed;
 vSpeedCam = vSpeed;
 
+
+
 if(!stop_movement){
 	//Sprite Change
 	var old_sprite = sprite_index;
 	image_speed = 0.25;
+	
 
 	if(leftKey){
 		image_xscale = -1;
 		sprite_index = left_right;
+		
 	}
 	else if(rightKey){
 		image_xscale = 1;
 		sprite_index = left_right;
+		
 	}
 	else if(upKey){
 		sprite_index = up;
@@ -68,6 +73,23 @@ if(!stop_movement){
 	}
 }
 
+//Walking Sound
+if (canSFX = true)
+{
+	if (xprevious != x)
+	{
+		audio_play_sound(snd_walk,0,0);
+		alarm_set(4, 33);
+		canSFX = false;
+	}	else if (yprevious != y)
+	{
+		audio_play_sound(snd_walk,0,0);
+		alarm_set(4, 18);
+		canSFX = false;
+	}
+}
+
+
 
 //Walking Particle
 if((xprevious != x or yprevious != y) and canDust = true)
@@ -78,3 +100,4 @@ if((xprevious != x or yprevious != y) and canDust = true)
 	
 	part_particles_create(obj_particle_setup.particle_system, x, y + (sprite_height/2), obj_particle_setup.particle_dust, 10);
 }
+

@@ -16,6 +16,7 @@ if(accept_key) {
 		case 0: //Start Game
 			room_goto(rm_game);
 			audio_pause_all();
+			audio_play_sound(snd_select,0,0);
 			break;
 		
 		case 1: //Settings

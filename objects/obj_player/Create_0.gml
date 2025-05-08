@@ -13,6 +13,7 @@ speedWalk = 1.25;
 
 //Cut Scene
 stop_movement = false;
-audio_play_sound(bgm_default2,1,1,1);
+audio_play_sound(bgm_default,1,1,1);
 
 canDust = true;
+canSFX = true;

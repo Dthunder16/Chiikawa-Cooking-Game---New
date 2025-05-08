@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"bgm_default2",
+  "%Name":"snd_chicken",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":60.032608,
-  "name":"bgm_default2",
+  "duration":1.0515873,
+  "name":"snd_chicken",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"bgm_default2.wav",
+  "soundFile":"snd_chicken.mp3",
   "type":0,
   "volume":1.0,
 }

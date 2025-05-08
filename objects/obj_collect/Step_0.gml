@@ -5,13 +5,16 @@ if(distance_to_object(obj_player) <= 30){
 	//Item will float towards player
 	x = lerp(x, obj_player.x, 0.2);
 	y = lerp(y, obj_player.y, 0.2);
+	
 }
 
 //Pick Up
 sprite = sprite_index;
 item = noone;
 
+
 switch(sprite_index){
+
 	case (spr_egg_8x8):
 		item = global.raw_materials.egg;
 		pick_up_item(item);
