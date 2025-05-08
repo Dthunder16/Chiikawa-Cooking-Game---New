@@ -1,8 +1,8 @@
 
 depth = -bbox_bottom;
 
-/*
-has_dropped_apples = false;
+
+
 
 
 var distance_to_player = distance_to_object(obj_player)
