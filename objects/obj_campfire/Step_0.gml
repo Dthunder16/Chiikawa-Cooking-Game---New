@@ -15,4 +15,8 @@ if(distance_to_object(obj_player) <= 15){
 		obj_player.stop_movement = false;
 	}
 }
+if(keyboard_check(vk_space) && distance_to_player < 50)
+{
+	room_goto(rm_cooking)
+}
 
