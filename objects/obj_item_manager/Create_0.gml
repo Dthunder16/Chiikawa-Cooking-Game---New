@@ -148,3 +148,12 @@ heightCounter = 0; //counter for surface animation
 recipeSurface = surface_create(width,maxHeight); //create the surface
 surfaceXpos = display_get_gui_width() - 8*screen_bord; 
 surfaceYpos = 10; //surface position relative to GUI
+
+
+ingredient_x = 900;
+first_ingredient_y = 375;
+second_ingreditent_y = 525;
+third_ingredient_y = 675;
+		
+recipe_x = 600;
+recipe_y = 450;

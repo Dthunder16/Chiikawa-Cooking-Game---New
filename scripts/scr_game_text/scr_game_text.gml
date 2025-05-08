@@ -67,16 +67,45 @@ function scr_game_text(_text_id){
 				scr_text(":c", "hachiware-sad");
 				break;
 				
-		//new case for if hachiware has the food completed
-		case "hachiware has food":
-			scr_text("Hey you're back!");
-				scr_option("Give", "hachiware - give");
-				break;
+				
+				//new case for giving item
 			case "hachiware - give":
-			scr_text("Is that my apple ice cream? Thank you Chiikawa, you're the best!", "hachiware");
-			scr_text("They say an apple a day keeps the doctor away, but does apple ice cream work too?", "hachiware");
-			break;
-			
+    if (ds_list_empty(_recipeList)) {
+		
+        scr_text("Go get a recipe and then come back!", "hachiware");
+    } 
+    else {
+        if (!doneCooking) {
+            scr_text("I'm still waiting on that ice cream...", "hachiware");
+        } 
+        else if (doneCooking){
+            scr_text("You've finished cooking! What would you like to do?", "chiikawa");
+
+            
+            scr_option("Give Ice Cream", "hachiware - give-confirm");
+            scr_option("Nevermind", "hachiware - cancel");
+        }
+    }
+    break;
+
+case "hachiware - give-confirm":
+    scr_text("YAY! Thank you so much!", "hachiware");
+    scr_text("They say an apple a day keeps the doctor away, but does apple ice cream work too?", "hachiware");
+
+    
+    
+    doneCooking = false; 
+
+    break;
+
+case "hachiware - cancel":
+    scr_text("Okay! Come back when you're ready.", "hachiware");
+    break;
+				
+		
+		
+		
+		
 		
 		//---------------------------USAGI---------------------------//
 		case "usagi":

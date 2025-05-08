@@ -1,9 +1,12 @@
 
 
+
 //Font
 draw_set_font(pixel_font_big);
 
 for(var i = 0; i < array_length(inv); i++){
+	
+	
 	
 	var _x = screen_bord;
 	var _y = screen_bord;
@@ -126,7 +129,14 @@ if(isOpen = false){
     surface_reset_target();
     draw_surface(recipeSurface,surfaceXpos,surfaceYpos);
 	
+	
 }
+	
+	//need to draw sprites into the cooking room
+	 //draw_sprite(curRecipe.sprite, 0, recipe_x, recipe_y);
+	
+
+
 
 
 

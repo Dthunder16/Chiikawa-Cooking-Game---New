@@ -1,4 +1,5 @@
 overlap_time = 0;
+doneCooking = false;
 
 //how long you have to overlap to finish cooking
 overlap_time_target = 300;

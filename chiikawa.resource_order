@@ -5,6 +5,7 @@
     {"name":"Inventory System","order":2,"path":"folders/Inventory System.yy",},
     {"name":"Menu System","order":3,"path":"folders/Menu System.yy",},
     {"name":"Objects","order":4,"path":"folders/Objects.yy",},
+    {"name":"Food","order":1,"path":"folders/Objects/Food.yy",},
     {"name":"Rooms","order":5,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":6,"path":"folders/Scripts.yy",},
     {"name":"Shaders","order":7,"path":"folders/Shaders.yy",},

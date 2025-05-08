@@ -9,11 +9,11 @@
     {"name":"inst_3DAB73C8","path":"rooms/rm_cooking/rm_cooking.yy",},
     {"name":"inst_5C9F918D","path":"rooms/rm_cooking/rm_cooking.yy",},
     {"name":"inst_2DC31787","path":"rooms/rm_cooking/rm_cooking.yy",},
-    {"name":"inst_3C664AC7","path":"rooms/rm_cooking/rm_cooking.yy",},
     {"name":"inst_614E04E5","path":"rooms/rm_cooking/rm_cooking.yy",},
     {"name":"inst_69288D61","path":"rooms/rm_cooking/rm_cooking.yy",},
     {"name":"inst_4AE9A92","path":"rooms/rm_cooking/rm_cooking.yy",},
     {"name":"inst_E7ACB38","path":"rooms/rm_cooking/rm_cooking.yy",},
+    {"name":"inst_3C664AC7","path":"rooms/rm_cooking/rm_cooking.yy",},
   ],
   "isDnd":false,
   "layers":[
