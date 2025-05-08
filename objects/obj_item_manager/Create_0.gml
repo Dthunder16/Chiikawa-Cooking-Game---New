@@ -85,9 +85,6 @@ global.raw_materials =
 		spr_vanilla,
 		0
 		),
-	
-		
-	
 }
 
 //Recipes - Completed Foods

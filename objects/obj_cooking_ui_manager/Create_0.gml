@@ -1,5 +1,8 @@
 depth = -999;
 
+//Current Recipe
+global.cur_recipe = noone;
+
 //Drawing & Mouse Pos
 
 

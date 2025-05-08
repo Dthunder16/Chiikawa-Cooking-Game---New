@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Cooking UI",
-    "path":"folders/Objects/Cooking UI.yy",
+    "path":"folders/Cooking UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -25,6 +25,50 @@ function in_inventory(_item){
 	}
 }
 
+//Check if the player has all the ingredients for a recipe
+function can_cook(_recipe){
+	//What are the ingredients in the recipe
+	var has_all_ingredients = true;
+	
+	for(var i = 0; i < array_length(_recipe.ingredients); i++){
+		var required_ingredient = _recipe.ingredients[i];
+		var found = false;
+		
+		//Nested for loop to check the player's inventory
+		var _inv = obj_item_manager.inv;
+		for(var j = 0; j < array_length(_inv); j++){
+			var inventory_item = _inv[j];
+			
+			if(inventory_item == required_ingredient){
+				found = true;
+				break;
+			}
+		}
+		
+		//If one of the ingredients is not found, player cannot cook
+		if(!found){
+			has_all_ingredients = false;
+			break;
+		}
+	}
+	
+	return has_all_ingredients;
+}
+
+function check_can_cook(chosen_recipe){
+	if(can_cook(chosen_recipe)){
+		scr_text("Ok, now making " + string(chosen_recipe.name) + ".");
+		global.cur_recipe = chosen_recipe;
+		
+		//goto room
+		global.pending_room = rm_cooking;
+	}
+	else{
+		scr_text("You do not have enough materials.");
+		scr_text("Gather the correct materials and come back!");
+	}
+}
+
 
 function recipe_add(_recipe){
 	ds_list_add(obj_item_manager.recipeList,_recipe);

@@ -1,6 +1,50 @@
 // @param_text_id
 function scr_game_text(_text_id){
+	var _recipeList = obj_item_manager.recipeList;
 	switch(_text_id){
+		
+		///---------------------------Cooking---------------------------//
+		case "fireplace":
+			scr_text("What would you like to cook?");
+				scr_option("Yes!", "cooking - yes");
+				scr_option("No!", "cooking - no");
+			break;
+		
+		case "cooking - yes":
+			if(ds_list_empty(_recipeList)){
+				scr_text("You do not have a recipe.");
+				scr_text("Go get a recipe and then come back!");
+			} 
+			else {
+				scr_text("What would you like to cook?");
+
+				// Dynamically assign option ids
+				for (var i = 0; i < ds_list_size(_recipeList); i++) {
+					var recipe = ds_list_find_value(_recipeList, i);
+					scr_option(recipe.name, "cook-recipe-" + string(i)); // dynamically named options
+				}
+
+				scr_option("Nevermind!", "cooking - cancel");
+			}
+			break;
+			
+			//Option Responses
+			case "cook-recipe-0":
+				var _recipeList = obj_item_manager.recipeList;
+				var chosen_recipe = ds_list_find_value(_recipeList, 0);
+				check_can_cook(chosen_recipe);
+				break;
+			case "cook-recipe-1":
+				var chosen_recipe = ds_list_find_value(_recipeList, 1);
+				check_can_cook(chosen_recipe);
+				break;
+			case "cooking - cancel":
+				scr_text("Ok, come back when you know what you want to cook!");
+				break;
+
+		case "cooking - no":
+			scr_text("Ok, come back when you know what you want to cook!");
+			break;
 		
 		//---------------------------HACHIWARE---------------------------//
 		case "hachiware first encounter":
