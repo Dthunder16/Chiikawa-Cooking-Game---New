@@ -150,6 +150,7 @@
     {"id":{"name":"kuri_maju_idle","path":"sprites/kuri_maju_idle/kuri_maju_idle.yy",},},
     {"id":{"name":"spr_apple_64","path":"sprites/spr_apple_64/spr_apple_64.yy",},},
     {"id":{"name":"spr_apple","path":"sprites/spr_apple/spr_apple.yy",},},
+    {"id":{"name":"spr_appleicecream_128","path":"sprites/spr_appleicecream_128/spr_appleicecream_128.yy",},},
     {"id":{"name":"spr_appleicecream","path":"sprites/spr_appleicecream/spr_appleicecream.yy",},},
     {"id":{"name":"spr_applepie","path":"sprites/spr_applepie/spr_applepie.yy",},},
     {"id":{"name":"spr_appletree","path":"sprites/spr_appletree/spr_appletree.yy",},},

@@ -3,14 +3,14 @@
   "%Name":"obj_cooking_ui_manager",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_cooking_ui_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Inventory System",
-    "path":"folders/Inventory System.yy",
+    "name":"Cooking UI",
+    "path":"folders/Objects/Cooking UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

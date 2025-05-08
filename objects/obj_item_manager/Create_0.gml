@@ -112,6 +112,19 @@ global.food =
 	
 }
 
+/*
+switch (room) {
+    case rm_cooking:
+        
+        break;
+    case rm_game:
+       
+        break;
+   
+}
+*/
+
+
 //Drawing & Mouse Pos
 sep = 90;
 screen_bord = 50;

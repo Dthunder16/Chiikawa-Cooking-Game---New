@@ -1,10 +1,16 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
-    {"name":"obj_cooking_ui_manager","order":1,"path":"objects/obj_cooking_ui_manager/obj_cooking_ui_manager.yy",},
+    {"name":"obj_campfire_big","order":5,"path":"objects/obj_campfire_big/obj_campfire_big.yy",},
+    {"name":"obj_cooking_bar","order":4,"path":"objects/obj_cooking_bar/obj_cooking_bar.yy",},
+    {"name":"obj_cooking_table","order":3,"path":"objects/obj_cooking_table/obj_cooking_table.yy",},
+    {"name":"obj_cooking_target","order":2,"path":"objects/obj_cooking_target/obj_cooking_target.yy",},
+    {"name":"obj_cooking_ui_bg","order":1,"path":"objects/obj_cooking_ui_bg/obj_cooking_ui_bg.yy",},
+    {"name":"obj_cooking_ui_manager","order":7,"path":"objects/obj_cooking_ui_manager/obj_cooking_ui_manager.yy",},
     {"name":"obj_gui_manager","order":1,"path":"objects/obj_gui_manager/obj_gui_manager.yy",},
-    {"name":"obj_progress_bar","order":1,"path":"objects/obj_progress_bar/obj_progress_bar.yy",},
+    {"name":"obj_progress_bar","order":6,"path":"objects/obj_progress_bar/obj_progress_bar.yy",},
     {"name":"spr_apple_64","order":5,"path":"sprites/spr_apple_64/spr_apple_64.yy",},
+    {"name":"spr_appleicecream_128","order":1,"path":"sprites/spr_appleicecream_128/spr_appleicecream_128.yy",},
     {"name":"spr_berry_64","order":2,"path":"sprites/spr_berry_64/spr_berry_64.yy",},
     {"name":"spr_campfire_256","order":7,"path":"sprites/spr_campfire_256/spr_campfire_256.yy",},
     {"name":"spr_campfire_big","order":6,"path":"sprites/spr_campfire_big/spr_campfire_big.yy",},

@@ -13,6 +13,7 @@
     {"name":"inst_614E04E5","path":"rooms/rm_cooking/rm_cooking.yy",},
     {"name":"inst_69288D61","path":"rooms/rm_cooking/rm_cooking.yy",},
     {"name":"inst_4AE9A92","path":"rooms/rm_cooking/rm_cooking.yy",},
+    {"name":"inst_E7ACB38","path":"rooms/rm_cooking/rm_cooking.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -26,6 +27,7 @@
         {"$GMRInstance":"v2","%Name":"inst_3C664AC7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3C664AC7","objectId":{"name":"obj_cooking_table","path":"objects/obj_cooking_table/obj_cooking_table.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":436.0,"y":186.0,},
         {"$GMRInstance":"v2","%Name":"inst_69288D61","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_69288D61","objectId":{"name":"obj_campfire_big","path":"objects/obj_campfire_big/obj_campfire_big.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":148.0,"y":802.0,},
         {"$GMRInstance":"v2","%Name":"inst_4AE9A92","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4AE9A92","objectId":{"name":"obj_progress_bar","path":"objects/obj_progress_bar/obj_progress_bar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":560.0,"y":680.0,},
+        {"$GMRInstance":"v2","%Name":"inst_E7ACB38","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E7ACB38","objectId":{"name":"obj_cooking_ui_manager","path":"objects/obj_cooking_ui_manager/obj_cooking_ui_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":707.0,"y":402.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_cooking_bg","path":"sprites/spr_cooking_bg/spr_cooking_bg.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

@@ -1,3 +1,5 @@
+
+
 //Font
 draw_set_font(pixel_font_big);
 
@@ -61,6 +63,8 @@ if(isOpen = false){
 	
 //The recipe part
     for(var i = 0; i<ds_list_size(recipeList); i++){
+		
+		show_debug_message("Recipe List Size OTHER: " + string(ds_list_size(obj_item_manager.recipeList)));
         //Initialize necessary Parameters
         var _owncol = #95ff30;
         var _misscol = c_white;

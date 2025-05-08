@@ -1,8 +1,8 @@
 //draw the menu background
-draw_sprite_ext(sprite_index, image_index, x_pos, y_pos, width/sprite_width, height/sprite_height, 0, c_white, 0.75);
+//draw_sprite_ext(sprite_index, image_index, x_pos, y_pos, width/sprite_width, height/sprite_height, 0, c_white, 0.75);
 
 //draw the options
-draw_set_font(pixel_font);
+draw_set_font(pixel_font_big);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 

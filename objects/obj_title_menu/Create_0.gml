@@ -1,13 +1,13 @@
 width = 100;
 height = 200;
 
-x_pos = 150;
-y_pos = 50;
+x_pos = 300;
+y_pos = 560;
 
 pos = 0;
 
 op_border = 8;
-op_space = 20;
+op_space = 150;
 
 option[0] = "Start Game";
 option[1] = "Settings";
