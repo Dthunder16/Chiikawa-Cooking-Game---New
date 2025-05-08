@@ -11,6 +11,7 @@ function scr_game_text(_text_id){
 			break;
 		
 		case "cooking - yes":
+			audio_play_sound(snd_select,0,0);
 			if(ds_list_empty(_recipeList)){
 				scr_text("You do not have a recipe.");
 				scr_text("Go get a recipe and then come back!");
@@ -30,19 +31,23 @@ function scr_game_text(_text_id){
 			
 			//Option Responses
 			case "cook-recipe-0":
+				audio_play_sound(snd_select,0,0);
 				var _recipeList = obj_item_manager.recipeList;
 				var chosen_recipe = ds_list_find_value(_recipeList, 0);
 				check_can_cook(chosen_recipe);
 				break;
 			case "cook-recipe-1":
+				audio_play_sound(snd_select,0,0);
 				var chosen_recipe = ds_list_find_value(_recipeList, 1);
 				check_can_cook(chosen_recipe);
 				break;
 			case "cooking - cancel":
+				audio_play_sound(snd_select,0,0);
 				scr_text("Ok, come back when you know what you want to cook!");
 				break;
 
 		case "cooking - no":
+			audio_play_sound(snd_select,0,0);
 			scr_text("Ok, come back when you know what you want to cook!");
 			break;
 		
@@ -56,6 +61,7 @@ function scr_game_text(_text_id){
 				
 			break;
 			case "hachiware - yes":	
+				audio_play_sound(snd_select,0,0);
 				scr_text("Yea of course. I would love to get you your icecream!", "chiikawa", -1);
 				scr_text("YAY! Come back soon, I'm hungry.", "hachiware");
 				
@@ -63,6 +69,7 @@ function scr_game_text(_text_id){
 				gain_recipe(obj_hachiware.hasRecipe, obj_hachiware.recipeHold);
 				break;
 			case "hachiware - no":
+				audio_play_sound(snd_select,0,0);
 				scr_text("No thanks! I'm a little busy right now.", "chiikawa", -1);
 				scr_text(":c", "hachiware-sad");
 				break;
@@ -73,6 +80,7 @@ function scr_game_text(_text_id){
 				scr_option("Give", "hachiware - give");
 				break;
 			case "hachiware - give":
+			audio_play_sound(snd_select,0,0);
 			scr_text("Is that my apple ice cream? Thank you Chiikawa, you're the best!", "hachiware");
 			scr_text("They say an apple a day keeps the doctor away, but does apple ice cream work too?", "hachiware");
 			break;
@@ -85,9 +93,11 @@ function scr_game_text(_text_id){
 				scr_option("No!", "usagi - no");
 			break;
 			case "usagi - yes":
+				audio_play_sound(snd_select,0,0);
 				scr_text("AHHH LETS GO GET PUDDINGGGG!!!");
 				break;
 			case "usagi - no":
+				audio_play_sound(snd_select,0,0);
 				scr_text("HMPH.");
 				scr_text("That's why you have no friends!");
 				break;

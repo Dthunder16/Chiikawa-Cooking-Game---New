@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"vce_hachiware",
+  "%Name":"snd_recipe",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.08115646,
-  "name":"vce_hachiware",
+  "duration":1.0058957,
+  "name":"snd_recipe",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"vce_hachiware.wav",
+  "soundFile":"snd_recipe.mp3",
   "type":0,
   "volume":1.0,
 }

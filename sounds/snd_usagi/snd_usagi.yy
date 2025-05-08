@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"vce_usagi",
+  "%Name":"snd_usagi",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":1.6655556,
-  "name":"vce_usagi",
+  "name":"snd_usagi",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"vce_usagi.wav",
+  "soundFile":"snd_usagi.wav",
   "type":0,
   "volume":1.0,
 }
