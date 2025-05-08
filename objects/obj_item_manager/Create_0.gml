@@ -25,7 +25,7 @@ global.raw_materials =
 	apple: new create_item(
 		"Apple",
 		"An Apple! You're the apple of my pie!",
-		spr_egg_64,
+		spr_apple_64,
 		spr_apple,
 		0
 		),
@@ -39,28 +39,28 @@ global.raw_materials =
 	butter: new create_item(
 		"Butter",
 		"It's butter! You butter believe it! Dattebayo!",
-		spr_egg_64,
+		spr_butter,
 		spr_butter,
 		0
 		),
 	flour: new create_item(
 		"Flour",
 		"It's flour! Gluten tag to all my German homies",
-		spr_egg_64,
+		spr_flour_64,
 		spr_flour,
 		0
 		),
 	milk: new create_item(
 		"Milk",
 		"The love I have for milk is legen-dairy. Too bad it gives me IBS",
-		spr_egg_64,
+		spr_milk,
 		spr_milk,
 		0
 		),
 	rice: new create_item(
 		"Rice",
 		"Hi Rice, I'm Chiikawa. Rice to meet you too!",
-		spr_egg_64,
+		spr_rice,
 		spr_rice,
 		0
 		),
@@ -74,14 +74,14 @@ global.raw_materials =
 	tomato: new create_item(
 		"Tomato",
 		"I love toes.. I mean uh! I love you from my head tomatoes <3",
-		spr_egg_64,
+		spr_tomato_64,
 		spr_tomato,
 		0
 		),
 	vanilla: new create_item(
 		"Vanilla",
 		"It's vanilla bean! Cool beans.",
-		spr_egg_64,
+		spr_vanilla,
 		spr_vanilla,
 		0
 		),
@@ -108,6 +108,8 @@ global.food =
 		sprite: spr_appleicecream,
 		ingredients: [global.raw_materials.egg, global.raw_materials.apple]
 	}
+	
+	
 }
 
 //Drawing & Mouse Pos

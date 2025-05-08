@@ -31,8 +31,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Environment",
-    "path":"folders/Sprites/Environment.yy",
+    "name":"Cooking UI",
+    "path":"folders/Sprites/Cooking UI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

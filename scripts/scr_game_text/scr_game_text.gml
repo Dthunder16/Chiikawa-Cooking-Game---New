@@ -3,12 +3,13 @@ function scr_game_text(_text_id){
 	switch(_text_id){
 		
 		//---------------------------HACHIWARE---------------------------//
-		case "hachiware":
+		case "hachiware first encounter":
 			scr_text("Hi, I am Hachiware! Nice to meet you!.", "hachiware");
 			scr_text("I'm really craving a sweet treat right now...", "hachiware");
 			scr_text("Would you like to make me an apple flavoured sweet treat?", "hachiware");
 				scr_option("Yes!", "hachiware - yes");
 				scr_option("No!", "hachiware - no");
+				
 			break;
 			case "hachiware - yes":	
 				scr_text("Yea of course. I would love to get you your icecream!", "chiikawa", -1);
@@ -21,7 +22,17 @@ function scr_game_text(_text_id){
 				scr_text("No thanks! I'm a little busy right now.", "chiikawa", -1);
 				scr_text(":c", "hachiware-sad");
 				break;
+				
+		//new case for if hachiware has the food completed
+		case "hachiware has food":
+			scr_text("Hey you're back!");
+				scr_option("Give", "hachiware - give");
+				break;
+			case "hachiware - give":
+			scr_text("Is that my apple ice cream? Thank you Chiikawa, you're the best!", "hachiware");
+			scr_text("They say an apple a day keeps the doctor away, but does apple ice cream work too?", "hachiware");
 			break;
+			
 		
 		//---------------------------USAGI---------------------------//
 		case "usagi":

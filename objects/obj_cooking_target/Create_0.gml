@@ -4,5 +4,5 @@ jump_force = -2;
 
 
 //boundaries for movement
-y_min = 150;
-y_max = 550;
+y_min = obj_cooking_ui_bg.y + 100;
+y_max = obj_cooking_ui_bg.y + obj_cooking_ui_bg.sprite_height - 100;
