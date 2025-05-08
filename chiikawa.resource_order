@@ -1,10 +1,10 @@
 {
   "FolderOrderSettings":[
+    {"name":"Cooking UI","order":14,"path":"folders/Cooking UI.yy",},
     {"name":"Dialogue System","order":1,"path":"folders/Dialogue System.yy",},
     {"name":"Inventory System","order":2,"path":"folders/Inventory System.yy",},
     {"name":"Menu System","order":3,"path":"folders/Menu System.yy",},
     {"name":"Objects","order":4,"path":"folders/Objects.yy",},
-    {"name":"Cooking UI","order":14,"path":"folders/Cooking UI.yy",},
     {"name":"Rooms","order":5,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":6,"path":"folders/Scripts.yy",},
     {"name":"Shaders","order":7,"path":"folders/Shaders.yy",},

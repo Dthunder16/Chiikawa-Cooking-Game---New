@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"Cooking UI","folderPath":"folders/Cooking UI.yy","name":"Cooking UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Day & Night Cycle","folderPath":"folders/Day & Night Cycle.yy","name":"Day & Night Cycle","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Dialogue System","folderPath":"folders/Dialogue System.yy","name":"Dialogue System","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Chiikawa","folderPath":"folders/Dialogue System/Chiikawa.yy","name":"Chiikawa","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -19,7 +20,6 @@
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Animals","folderPath":"folders/Objects/Animals.yy","name":"Animals","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Collectibles","folderPath":"folders/Objects/Collectibles.yy","name":"Collectibles","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Cooking UI","folderPath":"folders/Cooking UI.yy","name":"Cooking UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Environment","folderPath":"folders/Objects/Environment.yy","name":"Environment","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPCs","folderPath":"folders/Objects/NPCs.yy","name":"NPCs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particles","folderPath":"folders/Objects/Particles.yy","name":"Particles","resourceType":"GMFolder","resourceVersion":"2.0",},
