@@ -1,5 +1,3 @@
-
-
 vspeed += gravity;
 
 
