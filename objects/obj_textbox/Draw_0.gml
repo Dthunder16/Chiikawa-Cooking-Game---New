@@ -98,12 +98,7 @@ if(setup == false){
 //-------------Typing Text Effect-------------//
 if(draw_char < text_length[page]){
 	draw_char += text_spd;
-	if (voice_playing = false)
-	{
-		audio_play_sound(vce_text,0,1);
-		voice_playing = true;
-		alarm_set(0,30);
-	}
+	
 	//Cannot go beyond this speed (0 to text_length)
 	draw_char = clamp(draw_char, 0, text_length[page]);
 	
@@ -111,8 +106,6 @@ if(draw_char < text_length[page]){
 	var _check_char = string_char_at(text[page], draw_char);
 	if(_check_char == "." || _check_char == "?" || _check_char == ","){
 		//text_pause_timer = text_pause_time;
-		audio_pause_sound(vce_text);
-		voice_playing = false;
 	}
 }
 
@@ -121,7 +114,6 @@ if(accept_key){
 	//if typing is done -> go to next page
 	if(draw_char == text_length[page]){
 		//Next Page Case
-		
 		if(page < page_number - 1){
 			page++;
 			draw_char = 0;

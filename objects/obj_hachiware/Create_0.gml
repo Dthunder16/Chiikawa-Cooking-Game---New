@@ -5,4 +5,5 @@ set_voice = snd_hachiware;
 
 hasRecipe = false;
 
-set_textvoice = vce_hachiware;
+//Keeping Track of Dialogue
+first_encounter = false;

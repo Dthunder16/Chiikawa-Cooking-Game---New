@@ -44,9 +44,5 @@ last_free_space = 0;
 text_pause_timer = 0;
 text_pause_time = 16;
 
-//textvoice
-vce_text = vce_chiikawa;
-voice_playing = false;
-
 //transitions
 global.pending_room = -1;
