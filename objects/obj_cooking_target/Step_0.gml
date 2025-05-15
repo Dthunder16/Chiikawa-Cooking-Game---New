@@ -35,6 +35,7 @@ if(bar_collide){
 		show_debug_message("done cooking");
 		
 	}
+	
 	obj_progress_bar.overlap_time = clamp(obj_progress_bar.overlap_time, 1, 200);
 	
 } else {
