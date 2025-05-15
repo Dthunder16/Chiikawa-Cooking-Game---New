@@ -31,6 +31,10 @@ var bar_collide = instance_place(x,y,obj_cooking_bar);
 if(bar_collide){
 	obj_progress_bar.overlap_time += 3;
 	show_debug_message("overlap time: " +  string(obj_progress_bar.overlap_time));
+	if (obj_progress_bar.overlap_time == 203){
+		show_debug_message("done cooking");
+		
+	}
 	obj_progress_bar.overlap_time = clamp(obj_progress_bar.overlap_time, 1, 200);
 	
 } else {
