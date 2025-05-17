@@ -60,88 +60,91 @@ function scr_game_text(_text_id){
 				scr_option("No!", "hachiware - no");
 				
 			break;
+		
 			case "hachiware - yes":	
 				audio_play_sound(snd_select,0,0);
 				scr_text("Yea of course. I would love to get you your icecream!", "chiikawa", -1);
 				scr_text("YAY! Come back soon, I'm hungry.", "hachiware");
 				
+				//Change Text
+				obj_hachiware.text_id = "hachiware - give";
+				
 				//Gain Recipe Code
 				gain_recipe(obj_hachiware.hasRecipe, obj_hachiware.recipeHold);
 				break;
+			
 			case "hachiware - no":
 				audio_play_sound(snd_select,0,0);
 				scr_text("No thanks! I'm a little busy right now.", "chiikawa", -1);
 				scr_text(":c", "hachiware-sad");
 				break;
+			
+		//new case for giving item
+		case "hachiware - give":
+			if (ds_list_empty(_recipeList)) {
+			    scr_text("Go get a recipe and then come back!", "hachiware");
+			} 
+			else {
+				if (!variable_global_exists("done_cooking")) {
+				    global.done_cooking = false;
+				}
+			    else if (!global.done_cooking) {
+			        scr_text("I'm still waiting on that ice cream...", "hachiware");
+			    } 
+			    else if (global.done_cooking){
+			        scr_text("You've finished cooking! What would you like to do?", "chiikawa", -1);
+			        scr_option("Give Ice Cream", "hachiware - give-confirm");
+			        scr_option("Nevermind", "hachiware - cancel");
+			    }
+			}
+			break;
+			
+			case "hachiware - give-confirm":
+				global.done_cooking = true;
+			    scr_text("YAY! Thank you so much!", "hachiware");
+			    scr_text("They say an apple a day keeps the doctor away, but does apple ice cream work too?", "hachiware");
+			    
+				ds_list_delete(obj_item_manager.recipeList, global.food.apple_icecream);
+				//remove_ingredients(global.food.apple_icecream);
 				
 				
-				//new case for giving item
-			case "hachiware - give":
-    if (ds_list_empty(_recipeList)) {
-		
-        scr_text("Go get a recipe and then come back!", "hachiware");
-    } 
-    else {
-        if (!doneCooking) {
-            scr_text("I'm still waiting on that ice cream...", "hachiware");
-        } 
-        else if (doneCooking){
-            scr_text("You've finished cooking! What would you like to do?", "chiikawa");
-
-            
-            scr_option("Give Ice Cream", "hachiware - give-confirm");
-            scr_option("Nevermind", "hachiware - cancel");
-        }
-    }
-    break;
-
-case "hachiware - give-confirm":
-    scr_text("YAY! Thank you so much!", "hachiware");
-    scr_text("They say an apple a day keeps the doctor away, but does apple ice cream work too?", "hachiware");
-
-    
-    
-    doneCooking = false; 
-
-    break;
-
-case "hachiware - cancel":
-    scr_text("Okay! Come back when you're ready.", "hachiware");
-    break;
 				
+				obj_hachiware.text_id = "hachiware - complete";
+
+			    break;
+
+			case "hachiware - cancel":
+			    scr_text("Okay! Come back when you're ready.", "hachiware");
+				obj_hachiware.text_id = "hachiware - give";
+			    break;
 		
-		
-		
-		
-		
+		case "hachiware - complete":
+			scr_text("Thanks for making me full!", "hachiware");
+			scr_text("Now I will never need to eat again!!", "hachiware");
+			scr_text("For sure...", "chiikawa", -1);
+			break;
+				
 		//---------------------------USAGI---------------------------//
 		case "usagi":
-			scr_text("Do you like pudding?");
+			scr_text("Do you like pudding?", "usagi");
 				scr_option("Yes!", "usagi - yes");
 				scr_option("No!", "usagi - no");
 			break;
 			case "usagi - yes":
-				audio_play_sound(snd_select,0,0);
-				scr_text("AHHH LETS GO GET PUDDINGGGG!!!");
+				//audio_play_sound(snd_select,0,0);
+				scr_text("AHHH LETS GO GET PUDDINGGGG!!!", "usagi");
 				break;
 			case "usagi - no":
-				audio_play_sound(snd_select,0,0);
-				scr_text("HMPH.");
-				scr_text("That's why you have no friends!");
+				//audio_play_sound(snd_select,0,0);
+				scr_text("HMPH.", "usagi");
+				scr_text("That's why you have no friends!", "usagi");
 				break;
 		
 		//---------------------------KURI MAJU---------------------------//
-		case "kuri maju":
-			scr_text("I kinda want to nap... but I also want snacks... life is hard...");
-			scr_text("Do you have alcohol? I want a beer!");
+		case "kuri manju":
+			scr_text("I kinda want to nap... but I also want snacks... life is hard...", "kuri manju");
+			scr_text("Do you have alcohol? I want a beer!", "kuri manju");
 			break;
-		
-		//---------------------------MOMONGA---------------------------//
-		case "momonga":
-			scr_text("Tiny emergency: I lost my sock. Only one. Suspicious.");
-			scr_text("If you squint really hard, that cloud looks like a rice ball!");
-			break;
-		
 	}
 	
 }

@@ -29,10 +29,14 @@ if (y > y_max) {
 var bar_collide = instance_place(x,y,obj_cooking_bar);
 
 if(bar_collide){
-	obj_progress_bar.overlap_time += 3;
-	show_debug_message("overlap time: " +  string(obj_progress_bar.overlap_time));
+	obj_progress_bar.overlap_time += 2.5;
+	//show_debug_message("overlap time: " +  string(obj_progress_bar.overlap_time));
 	obj_progress_bar.overlap_time = clamp(obj_progress_bar.overlap_time, 1, 200);
 	
+	if (obj_progress_bar.overlap_time == 200){
+		global.done_cooking = true;
+		room_goto(rm_game);
+	}
 } else {
     //progress goes down when not overlapping
     if (obj_progress_bar.overlap_time < obj_progress_bar.overlap_time_target) {

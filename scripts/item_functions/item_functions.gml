@@ -70,6 +70,19 @@ function check_can_cook(chosen_recipe){
 	}
 }
 
+function remove_ingredients(_recipe){
+	for (var i = 0; i < array_length(_recipe.ingredients); i++) {
+		var required_ingredient = _recipe.ingredients[i];
+
+		// Loop backward to avoid skipping items when deleting
+		for (var j = array_length(obj_item_manager.inv) - 1; j >= 0; j--) {
+			if (obj_item_manager.inv[j] == required_ingredient) {
+				obj_item_manager.inv = array_delete(obj_item_manager.inv, j, 1);
+			}
+		}
+	}
+}
+
 
 function recipe_add(_recipe){
 	ds_list_add(obj_item_manager.recipeList,_recipe);

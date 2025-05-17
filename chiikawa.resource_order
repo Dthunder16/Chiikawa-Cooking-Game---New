@@ -2,6 +2,8 @@
   "FolderOrderSettings":[
     {"name":"Cooking UI","order":14,"path":"folders/Cooking UI.yy",},
     {"name":"Dialogue System","order":1,"path":"folders/Dialogue System.yy",},
+    {"name":"Kuri Maju","order":2,"path":"folders/Dialogue System/Kuri Maju.yy",},
+    {"name":"Usagi","order":1,"path":"folders/Dialogue System/Usagi.yy",},
     {"name":"Inventory System","order":2,"path":"folders/Inventory System.yy",},
     {"name":"Menu System","order":3,"path":"folders/Menu System.yy",},
     {"name":"Objects","order":4,"path":"folders/Objects.yy",},

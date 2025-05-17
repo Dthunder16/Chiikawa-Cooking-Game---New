@@ -19,3 +19,5 @@ if(keyboard_check_pressed(ord("Q"))){
     isOpen = !isOpen;
 	audio_play_sound(snd_recipe,0,0);
 }
+
+//Get item when cooking is done

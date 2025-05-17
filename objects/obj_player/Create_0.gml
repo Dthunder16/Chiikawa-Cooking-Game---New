@@ -1,3 +1,5 @@
+room_persistent = true;
+
 //Sprite
 down = chikawa_down;
 up = chikawa_up;

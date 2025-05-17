@@ -36,6 +36,13 @@ function scr_text(_text){
 				break;
 			
 			case "usagi":
+				speaker_sprite[page_number] = usagi_64;
+				txtb_spr[page_number] = textbox_hachiware;
+				break;
+			
+			case "kuri manju":
+				speaker_sprite[page_number] = kuri_manju_64;
+				txtb_spr[page_number] = textbox_hachiware;
 				break;
 		}
 	}
