@@ -55,7 +55,10 @@ function scr_game_text(_text_id){
 				obj_item_manager.cur_recipe = chosen_recipe;
 				check_can_cook(chosen_recipe);
 				
-				if(!check_can_cook(chosen_recipe)){
+				if(check_can_cook(chosen_recipe)){
+					//Reset var to allow player to getting more than 1 item from cooking
+					obj_player.item_collected = false;
+					
 					//Remove Items from Inventory
 					remove_ingredients(chosen_recipe);
 				

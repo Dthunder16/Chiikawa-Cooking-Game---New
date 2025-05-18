@@ -82,6 +82,7 @@ function check_can_cook(chosen_recipe){
 		
 		//goto room
 		global.pending_room = rm_cooking;
+		return true;
 	}
 	else{
 		scr_text("You do not have enough materials.");
