@@ -34,12 +34,22 @@ function scr_game_text(_text_id){
 				audio_play_sound(snd_select,0,0);
 				var _recipeList = obj_item_manager.recipeList;
 				var chosen_recipe = ds_list_find_value(_recipeList, 0);
+				//show_debug_message(chosen_recipe.name);
+				//global.curRecipe = chosen_recipe;
+				obj_item_manager.cur_recipe = chosen_recipe;
 				check_can_cook(chosen_recipe);
+				
+				//Remove Items from Inventory
+				remove_ingredients(chosen_recipe);
 				break;
 			case "cook-recipe-1":
 				audio_play_sound(snd_select,0,0);
 				var chosen_recipe = ds_list_find_value(_recipeList, 1);
+				//global.curRecipe = chosen_recipe;
 				check_can_cook(chosen_recipe);
+				
+				//Remove Items from Inventory
+				remove_ingredients(chosen_recipe);
 				break;
 			case "cooking - cancel":
 				audio_play_sound(snd_select,0,0);
@@ -104,10 +114,11 @@ function scr_game_text(_text_id){
 			    scr_text("YAY! Thank you so much!", "hachiware");
 			    scr_text("They say an apple a day keeps the doctor away, but does apple ice cream work too?", "hachiware");
 			    
+				//Remove Recipe from Recipe List
 				ds_list_delete(obj_item_manager.recipeList, global.food.apple_icecream);
-				//remove_ingredients(global.food.apple_icecream);
 				
-				
+				//Remove Item from Inventory
+				item_remove(obj_item_manager.cur_recipe);
 				
 				obj_hachiware.text_id = "hachiware - complete";
 

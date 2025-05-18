@@ -1,5 +1,8 @@
 depth = -9999;
 
+//Global
+cur_recipe = noone;
+
 //item constructor
 function create_item(_name, _desc, _spr, _spr_in_game, _effect) constructor {
 	name = _name;
@@ -94,7 +97,8 @@ global.food =
 	{
 		name: "Apple Ice Cream",
 		description: "",
-		sprite: spr_appleicecream,
+		menu_sprite: spr_appleicecream,
+		sprite: spr_appleicecream_64,
 		ingredients: [global.raw_materials.egg, global.raw_materials.apple]
 	},
 	

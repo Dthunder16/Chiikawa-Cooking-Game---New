@@ -1,9 +1,28 @@
-//Pick Up Items
+//Add Item to Inventory (Logic)
 function item_add(_item){
 	array_push(obj_item_manager.inv, _item);
 }
 
-//
+//Remove Item
+function item_remove(_item){
+	var _inv = obj_item_manager.inv;
+	for(var i = 0; i < array_length(_inv); i++){
+		if(_inv[i].name == _item.name){
+			array_delete(_inv, i, 1);
+			break;
+		}
+	}
+}
+
+//Remove Item from Recipe
+function remove_ingredients(_rec){
+	var _ing = _rec.ingredients;
+	for(var i = 0; i < array_length(_ing); i++){
+		item_remove(_ing[i]);
+	}
+}
+
+//Pick Up Item in Game
 function pick_up_item(_item){
 	//Destroy the Item You Collect + Add to Inventory
 	if(place_meeting(x,y,obj_player)){
@@ -67,19 +86,6 @@ function check_can_cook(chosen_recipe){
 	else{
 		scr_text("You do not have enough materials.");
 		scr_text("Gather the correct materials and come back!");
-	}
-}
-
-function remove_ingredients(_recipe){
-	for (var i = 0; i < array_length(_recipe.ingredients); i++) {
-		var required_ingredient = _recipe.ingredients[i];
-
-		// Loop backward to avoid skipping items when deleting
-		for (var j = array_length(obj_item_manager.inv) - 1; j >= 0; j--) {
-			if (obj_item_manager.inv[j] == required_ingredient) {
-				obj_item_manager.inv = array_delete(obj_item_manager.inv, j, 1);
-			}
-		}
 	}
 }
 

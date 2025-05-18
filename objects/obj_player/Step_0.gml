@@ -17,7 +17,11 @@ vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 hSpeedCam = hSpeed;
 vSpeedCam = vSpeed;
 
-
+//Check if cooking is finished
+if(global.done_cooking && !item_collected){
+	item_collected = true;
+	item_add(obj_item_manager.cur_recipe);
+}
 
 if(!stop_movement){
 	//Sprite Change

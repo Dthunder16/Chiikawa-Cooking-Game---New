@@ -1,5 +1,9 @@
 room_persistent = true;
 
+//Initialise Done Cooking
+global.done_cooking = false;
+item_collected = false;
+
 //Sprite
 down = chikawa_down;
 up = chikawa_up;

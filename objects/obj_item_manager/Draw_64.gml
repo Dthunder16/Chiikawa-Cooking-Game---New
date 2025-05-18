@@ -80,7 +80,7 @@ if(isOpen = false){
         //Recipe Name
         var curRecipe = ds_list_find_value(recipeList,i);
         draw_set_color(_recipecol);
-        draw_text(_x,initialYPos,curRecipe.name);
+        draw_text(_x,initialYPos+20,curRecipe.name);
 
         //var to track whether all ingredients are gathered
         var _ingrecount = 0;
@@ -107,17 +107,17 @@ if(isOpen = false){
             }
 
             //draw ingredient and its count
-            draw_text(_x+_xoffset,initialYPos+_sep*(j+1),curRecipe.ingredients[j].name);
-            draw_text(_x+30*_xoffset,initialYPos+_sep*(j+1),_count);
+            draw_text(_x+_xoffset,initialYPos+_sep*(j+1)+20,curRecipe.ingredients[j].name);
+            draw_text(_x+30*_xoffset,initialYPos+_sep*(j+1)+20,_count);
 		}
 		//draw the check icon if all ingredients are gathered
         if(_ingrecount = array_length(curRecipe.ingredients)){
-            draw_sprite(arrow,0,_x-5*_xoffset,initialYPos);
+            draw_sprite(arrow,0,_x-5*_xoffset,initialYPos+20);
         }
 
         //Recipe Icon
-        var _recipespr = curRecipe.sprite;
-        draw_sprite(_recipespr,0,(width-initialXPos-20),initialYPos);
+        var _recipespr = curRecipe.menu_sprite;
+        draw_sprite(_recipespr,0,(width-initialXPos-20),initialYPos+20);
 
         //Set Ypos for next Recipe
         initialYPos += ((1+array_length(curRecipe.ingredients))*_sep+_sep) ;
