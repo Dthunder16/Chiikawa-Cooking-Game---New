@@ -1,6 +1,6 @@
 {
   "FolderOrderSettings":[
-    {"name":"Cooking UI","order":14,"path":"folders/Cooking UI.yy",},
+    {"name":"Cooking UI","order":12,"path":"folders/Cooking UI.yy",},
     {"name":"Dialogue System","order":1,"path":"folders/Dialogue System.yy",},
     {"name":"Kuri Maju","order":2,"path":"folders/Dialogue System/Kuri Maju.yy",},
     {"name":"Usagi","order":1,"path":"folders/Dialogue System/Usagi.yy",},
@@ -27,6 +27,9 @@
     {"name":"obj_daynight","order":1,"path":"objects/obj_daynight/obj_daynight.yy",},
     {"name":"obj_gui_manager","order":1,"path":"objects/obj_gui_manager/obj_gui_manager.yy",},
     {"name":"obj_progress_bar","order":6,"path":"objects/obj_progress_bar/obj_progress_bar.yy",},
+    {"name":"obj_water_shader","order":2,"path":"objects/obj_water_shader/obj_water_shader.yy",},
+    {"name":"rm_test3","order":1,"path":"rooms/rm_test3/rm_test3.yy",},
+    {"name":"sh_water","order":1,"path":"shaders/sh_water/sh_water.yy",},
     {"name":"bgm_default","order":2,"path":"sounds/bgm_default/bgm_default.yy",},
     {"name":"bgm_menu","order":1,"path":"sounds/bgm_menu/bgm_menu.yy",},
     {"name":"snd_chicken","order":9,"path":"sounds/snd_chicken/snd_chicken.yy",},
@@ -61,5 +64,7 @@
     {"name":"spr_strawberry_64","order":3,"path":"sprites/spr_strawberry_64/spr_strawberry_64.yy",},
     {"name":"spr_strawberry","order":4,"path":"sprites/spr_strawberry/spr_strawberry.yy",},
     {"name":"spr_tomato_64","order":6,"path":"sprites/spr_tomato_64/spr_tomato_64.yy",},
+    {"name":"spr_water_blue","order":13,"path":"sprites/spr_water_blue/spr_water_blue.yy",},
+    {"name":"spr_water_displace","order":14,"path":"sprites/spr_water_displace/spr_water_displace.yy",},
   ],
 }

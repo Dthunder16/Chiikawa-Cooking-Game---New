@@ -38,7 +38,7 @@ draw_set_font(pixel_font);
 //Recipe code
 if(isOpen = false){
     //closed UI for recipe quest, clear the surface
-    draw_sprite(spr_recipe_button,0,surfaceXpos,surfaceYpos);
+    draw_sprite(spr_recipe_button,0,surfaceXpos + 200,surfaceYpos + 20);
     surface_free(recipeSurface);
     heightCounter = 0;
 	draw_set_font(pixel_font_big);
@@ -67,7 +67,7 @@ if(isOpen = false){
 //The recipe part
     for(var i = 0; i<ds_list_size(recipeList); i++){
 		
-		show_debug_message("Recipe List Size OTHER: " + string(ds_list_size(obj_item_manager.recipeList)));
+		show_debug_message("Recipe List Size: " + string(ds_list_size(obj_item_manager.recipeList)));
         //Initialize necessary Parameters
         var _owncol = #95ff30;
         var _misscol = c_white;
