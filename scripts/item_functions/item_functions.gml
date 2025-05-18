@@ -86,6 +86,7 @@ function check_can_cook(chosen_recipe){
 	else{
 		scr_text("You do not have enough materials.");
 		scr_text("Gather the correct materials and come back!");
+		return false;
 	}
 }
 

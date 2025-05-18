@@ -9,7 +9,7 @@ if(distance_to_object(obj_player) <= 15){
 		if_interacted = true;
 		create_textbox(text_id);
 		obj_player.stop_movement = true;
-		//audio_play_sound(set_voice,0,0);
+		audio_play_sound(set_voice,0,0);
 	}
 	
 	//Reset the 'if_interacted' var if the textbox is no longer there

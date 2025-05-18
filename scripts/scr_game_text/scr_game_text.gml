@@ -34,28 +34,34 @@ function scr_game_text(_text_id){
 				audio_play_sound(snd_select,0,0);
 				var _recipeList = obj_item_manager.recipeList;
 				var chosen_recipe = ds_list_find_value(_recipeList, 0);
-				//show_debug_message(chosen_recipe.name);
-				//global.curRecipe = chosen_recipe;
+				
 				obj_item_manager.cur_recipe = chosen_recipe;
-				check_can_cook(chosen_recipe);
+				if(check_can_cook(chosen_recipe)){
+					//Remove Items from Inventory
+					remove_ingredients(chosen_recipe);
 				
-				//Remove Items from Inventory
-				remove_ingredients(chosen_recipe);
-				
-				//Stop Sound from Playing
-				audio_pause_sound(bgm_default);
+					//Stop Sound from Playing
+					audio_pause_sound(bgm_default);
+				}
+				else{
+					//audio_resume_all();
+				}
 				break;
 			case "cook-recipe-1":
 				audio_play_sound(snd_select,0,0);
+				var _recipeList = obj_item_manager.recipeList;
 				var chosen_recipe = ds_list_find_value(_recipeList, 1);
-				//global.curRecipe = chosen_recipe;
+				
+				obj_item_manager.cur_recipe = chosen_recipe;
 				check_can_cook(chosen_recipe);
 				
-				//Remove Items from Inventory
-				remove_ingredients(chosen_recipe);
+				if(!check_can_cook(chosen_recipe)){
+					//Remove Items from Inventory
+					remove_ingredients(chosen_recipe);
 				
-				//Stop Sound from Playing
-				audio_pause_sound(bgm_default);
+					//Stop Sound from Playing
+					audio_pause_sound(bgm_default);
+				}
 				break;
 			case "cooking - cancel":
 				audio_play_sound(snd_select,0,0);
