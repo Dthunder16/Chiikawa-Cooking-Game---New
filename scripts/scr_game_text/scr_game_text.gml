@@ -41,6 +41,9 @@ function scr_game_text(_text_id){
 				
 				//Remove Items from Inventory
 				remove_ingredients(chosen_recipe);
+				
+				//Stop Sound from Playing
+				audio_pause_sound(bgm_default);
 				break;
 			case "cook-recipe-1":
 				audio_play_sound(snd_select,0,0);
@@ -50,6 +53,9 @@ function scr_game_text(_text_id){
 				
 				//Remove Items from Inventory
 				remove_ingredients(chosen_recipe);
+				
+				//Stop Sound from Playing
+				audio_pause_sound(bgm_default);
 				break;
 			case "cooking - cancel":
 				audio_play_sound(snd_select,0,0);
