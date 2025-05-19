@@ -1,6 +1,3 @@
-
-
-
 //Font
 draw_set_font(pixel_font_big);
 
@@ -15,7 +12,11 @@ for(var i = 0; i < array_length(inv); i++){
 	var _col = c_white;
 	
 	//icon
-	draw_sprite(inv[i].sprite, 0, _x, _y + _sep*i);
+	if (inv[i].sprite >= 0) {
+		draw_sprite(inv[i].sprite, 0, _x, _y + _sep * i);
+	} else {
+		show_debug_message("Invalid sprite index for item: " + string(i));
+	}
 	
 	//change color if item is selected
 	if(selected_item == i)
@@ -108,7 +109,7 @@ if(isOpen = false){
 
             //draw ingredient and its count
             draw_text(_x+_xoffset,initialYPos+_sep*(j+1)+20,curRecipe.ingredients[j].name);
-            draw_text(_x+30*_xoffset,initialYPos+_sep*(j+1)+20,_count);
+            draw_text(_x*_xoffset + 100,initialYPos+_sep*(j+1)+20,_count);
 		}
 		//draw the check icon if all ingredients are gathered
         if(_ingrecount = array_length(curRecipe.ingredients)){
@@ -117,10 +118,10 @@ if(isOpen = false){
 
         //Recipe Icon
         var _recipespr = curRecipe.menu_sprite;
-        draw_sprite(_recipespr,0,(width-initialXPos-20),initialYPos+20);
+        draw_sprite(_recipespr,0,(width-initialXPos-40),initialYPos+20);
 
         //Set Ypos for next Recipe
-        initialYPos += ((1+array_length(curRecipe.ingredients))*_sep+_sep) ;
+        initialYPos += ((1+array_length(curRecipe.ingredients))*_sep+_sep) - 30;
     }
     //Reset Ypos for next draw function
     initialYPos = 10;

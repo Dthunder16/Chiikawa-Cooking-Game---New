@@ -2,6 +2,8 @@ depth = -9999;
 
 //Global
 cur_recipe = noone;
+cur_recipe1 = noone;
+cur_recipe2 = noone;
 
 //item constructor
 function create_item(_name, _desc, _spr, _spr_in_game, _effect) constructor {
@@ -42,7 +44,7 @@ global.raw_materials =
 	butter: new create_item(
 		"Butter",
 		"It's butter! You butter believe it! Dattebayo!",
-		spr_butter,
+		spr_butter_64,
 		spr_butter,
 		0
 		),
@@ -56,7 +58,7 @@ global.raw_materials =
 	milk: new create_item(
 		"Milk",
 		"The love I have for milk is legen-dairy. Too bad it gives me IBS",
-		spr_milk,
+		spr_milk_64,
 		spr_milk,
 		0
 		),
@@ -102,14 +104,23 @@ global.food =
 		ingredients: [global.raw_materials.egg, global.raw_materials.apple]
 	},
 	
-	apple_pie :
+	berry_pie :
 	{
-		name: "Apple Pie",
+		name: "Berry Pie",
 		description: "",
-		sprite: spr_appleicecream,
-		ingredients: [global.raw_materials.egg, global.raw_materials.apple]
-	}
+		menu_sprite: spr_berrypie,
+		sprite: spr_berrypie_64,
+		ingredients: [global.raw_materials.egg, global.raw_materials.berry, global.raw_materials.butter]
+	},
 	
+	purin :
+	{
+		name: "Pudding",
+		description: "",
+		menu_sprite: spr_pudding_ani,
+		sprite: spr_pudding_64,
+		ingredients: [global.raw_materials.egg, global.raw_materials.milk]
+	}
 	
 }
 

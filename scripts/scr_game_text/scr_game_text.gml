@@ -134,7 +134,7 @@ function scr_game_text(_text_id){
 				
 				//Remove Item from Inventory
 				item_remove(obj_item_manager.cur_recipe);
-				
+				obj_item_manager.cur_recipe = undefined;
 				obj_hachiware.text_id = "hachiware - complete";
 
 			    break;
@@ -156,20 +156,167 @@ function scr_game_text(_text_id){
 				scr_option("Yes!", "usagi - yes");
 				scr_option("No!", "usagi - no");
 			break;
+			
 			case "usagi - yes":
 				//audio_play_sound(snd_select,0,0);
 				scr_text("AHHH LETS GO GET PUDDINGGGG!!!", "usagi");
+				scr_text("Would you like to make me some pudding?", "usagi");
+					scr_option("Yes!", "make pudding");
+					scr_option("No!", "no pudding");
 				break;
+			
+				case "make pudding":	
+					audio_play_sound(snd_select,0,0);
+					scr_text("One pudding for you coming up!", "chiikawa", -1);
+					scr_text("YATAAAAAA", "usagi");
+				
+					//Change Text
+					obj_usagi.text_id = "usagi - give";
+				
+					//Gain Recipe Code
+					gain_recipe(obj_usagi.hasRecipe, obj_usagi.recipeHold);
+					break;
+			
+				case "no pudding":
+					audio_play_sound(snd_select,0,0);
+					scr_text("No thanks! I'm a little busy right now.", "chiikawa", -1);
+					scr_text("HMPH. That's why you have no friends.", "usagi");
+					break;
+			
 			case "usagi - no":
 				//audio_play_sound(snd_select,0,0);
 				scr_text("HMPH.", "usagi");
 				scr_text("That's why you have no friends!", "usagi");
 				break;
+			
+			//Giving Food to Usagi
+			case "usagi - give":
+				if (ds_list_empty(_recipeList)) {
+				    scr_text("Go get a recipe and then come back!", "usagi");
+				} 
+				else {
+					if (!variable_global_exists("done_cooking")) {
+					    global.done_cooking = false;
+					}
+				    else if (!global.done_cooking) {
+				        scr_text("I'm still waiting on that pudding...", "usagi");
+				    } 
+				    else if (global.done_cooking){
+				        scr_text("You've finished cooking! What would you like to do?", "chiikawa", -1);
+				        scr_option("Give Pudding", "usagi - give-confirm");
+				        scr_option("Nevermind", "usagi - cancel");
+				    }
+				}
+				break;
+			
+				case "usagi - give-confirm":
+					global.done_cooking = true;
+				    scr_text("YATAAAAAA!", "usagi");
+				    scr_text("Time to eat everything!!!", "usagi");
+			    
+					//Remove Recipe from Recipe List
+					ds_list_delete(obj_item_manager.recipeList, global.food.purin);
+				
+					//Remove Item from Inventory
+					item_remove(obj_item_manager.cur_recipe);
+					obj_item_manager.cur_recipe = undefined;
+					
+					obj_usagi.text_id = "usagi - complete";
+
+				    break;
+
+				case "usagi - cancel":
+				    scr_text("Okay! Come back when you're ready.", "usagi");
+					obj_usagi.text_id = "usagi - give";
+				    break;
+		
+			case "usagi - complete":
+				scr_text("Thanks for making me full!", "usagi");
+				scr_text("Now I will never need to eat again!!", "usagi");
+				scr_text("For sure...", "chiikawa", -1);
+				break;
 		
 		//---------------------------KURI MAJU---------------------------//
-		case "kuri manju":
+		case "kuri maju":
 			scr_text("I kinda want to nap... but I also want snacks... life is hard...", "kuri manju");
 			scr_text("Do you have alcohol? I want a beer!", "kuri manju");
+			scr_text("No... But I can make you something else to cheer you up!", "chiikawa", -1);
+			scr_text("What do you have in mind?", "kuri manju");
+				scr_option("Pancake", "kuri - pancake");
+				scr_option("Berry Pie", "kuri - berry pie");
+				scr_option("Nevermind", "kuri - nevermind");
+				
+			break;
+		
+			case "kuri - pancake":	
+				audio_play_sound(snd_select,0,0);
+				scr_text("What about pancakes?", "chiikawa", -1);
+				scr_text("Sure! I would love to down 10 pancakes right now!", "kuri manju");
+				
+				//Change Text
+				obj_hachiware.text_id = "hachiware - give";
+				
+				//Gain Recipe Code
+				gain_recipe(obj_hachiware.hasRecipe, obj_hachiware.recipeHold);
+				break;
+			
+			case "kuri - berry pie":
+				audio_play_sound(snd_select,0,0);
+				scr_text("No thanks! I'm a little busy right now.", "chiikawa", -1);
+				scr_text(":c", "hachiware-sad");
+				break;
+			
+			case "kuri - nevermind":
+				audio_play_sound(snd_select,0,0);
+				scr_text("Hm...", "chiikawa", -1);
+				scr_text("I can't think of anything right now!", "chiikawa", -1);
+				scr_text("Come back when you think of something...", "kuri manju");
+				break;
+			
+		//new case for giving item
+		case "kuri - give":
+			if (ds_list_empty(_recipeList)) {
+			    scr_text("Go get a recipe and then come back!", "hachiware");
+			} 
+			else {
+				if (!variable_global_exists("done_cooking")) {
+				    global.done_cooking = false;
+				}
+			    else if (!global.done_cooking) {
+			        scr_text("I'm still waiting on that ice cream...", "hachiware");
+			    } 
+			    else if (global.done_cooking){
+			        scr_text("You've finished cooking! What would you like to do?", "chiikawa", -1);
+			        scr_option("Give Ice Cream", "hachiware - give-confirm");
+			        scr_option("Nevermind", "hachiware - cancel");
+			    }
+			}
+			break;
+			
+			case "kuri - give-confirm":
+				global.done_cooking = true;
+			    scr_text("YAY! Thank you so much!", "hachiware");
+			    scr_text("They say an apple a day keeps the doctor away, but does apple ice cream work too?", "hachiware");
+			    
+				//Remove Recipe from Recipe List
+				ds_list_delete(obj_item_manager.recipeList, global.food.apple_icecream);
+				
+				//Remove Item from Inventory
+				item_remove(obj_item_manager.cur_recipe);
+				
+				obj_hachiware.text_id = "hachiware - complete";
+
+			    break;
+
+			case "kuri - cancel":
+			    scr_text("Okay! Come back when you're ready.", "hachiware");
+				obj_hachiware.text_id = "hachiware - give";
+			    break;
+		
+		case "kuri - complete":
+			scr_text("Thanks for making me full!", "hachiware");
+			scr_text("Now I will never need to eat again!!", "hachiware");
+			scr_text("For sure...", "chiikawa", -1);
 			break;
 	}
 	
