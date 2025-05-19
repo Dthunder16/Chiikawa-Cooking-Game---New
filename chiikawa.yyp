@@ -130,6 +130,7 @@
     {"id":{"name":"snd_chicken","path":"sounds/snd_chicken/snd_chicken.yy",},},
     {"id":{"name":"snd_collect_item","path":"sounds/snd_collect_item/snd_collect_item.yy",},},
     {"id":{"name":"snd_hachiware","path":"sounds/snd_hachiware/snd_hachiware.yy",},},
+    {"id":{"name":"snd_kuri","path":"sounds/snd_kuri/snd_kuri.yy",},},
     {"id":{"name":"snd_recipe","path":"sounds/snd_recipe/snd_recipe.yy",},},
     {"id":{"name":"snd_select","path":"sounds/snd_select/snd_select.yy",},},
     {"id":{"name":"snd_tree","path":"sounds/snd_tree/snd_tree.yy",},},

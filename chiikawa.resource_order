@@ -35,6 +35,7 @@
     {"name":"snd_chicken","order":9,"path":"sounds/snd_chicken/snd_chicken.yy",},
     {"name":"snd_collect_item","order":3,"path":"sounds/snd_collect_item/snd_collect_item.yy",},
     {"name":"snd_hachiware","order":7,"path":"sounds/snd_hachiware/snd_hachiware.yy",},
+    {"name":"snd_kuri","order":15,"path":"sounds/snd_kuri/snd_kuri.yy",},
     {"name":"snd_recipe","order":12,"path":"sounds/snd_recipe/snd_recipe.yy",},
     {"name":"snd_select","order":11,"path":"sounds/snd_select/snd_select.yy",},
     {"name":"snd_tree","order":10,"path":"sounds/snd_tree/snd_tree.yy",},
