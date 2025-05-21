@@ -1,6 +1,10 @@
 depth = -9999;
 
-//Global
+//Track which character you are making food for
+make_food_usagi = false;
+make_food_hachi = false
+
+//Recipes
 cur_recipe = noone;
 cur_recipe1 = noone;
 cur_recipe2 = noone;
