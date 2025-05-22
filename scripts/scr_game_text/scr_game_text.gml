@@ -86,7 +86,7 @@ function scr_game_text(_text_id){
 			case "hachiware - yes":	
 				obj_item_manager.make_food_hachi = true;
 				
-				if(obj_item_manager.make_food_hachi){
+				if(!ds_list_empty(obj_item_manager.recipeList)){
 					scr_text("Oh! It seems like you are helping usagi right now.", "hachiware");
 					scr_text("Come back when you are done!", "hachiware");
 				}
@@ -173,7 +173,7 @@ function scr_game_text(_text_id){
 				case "make pudding":
 					obj_item_manager.make_food_usagi = true;
 				
-					if(obj_item_manager.make_food_hachi){
+					if(!ds_list_empty(obj_item_manager.recipeList)){
 						scr_text("Come back after you finish helping hachiware!", "usagi");
 					}
 					else {
