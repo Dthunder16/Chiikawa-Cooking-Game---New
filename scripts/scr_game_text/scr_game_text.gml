@@ -139,7 +139,9 @@ function scr_game_text(_text_id){
 				
 				//Remove Item from Inventory
 				item_remove(obj_item_manager.cur_recipe);
-				obj_item_manager.cur_recipe = undefined;
+				
+				//Remove Recipe
+				ds_list_clear(obj_item_manager.recipeList);
 				obj_hachiware.text_id = "hachiware - complete";
 
 			    break;
@@ -231,7 +233,7 @@ function scr_game_text(_text_id){
 				
 					//Remove Item from Inventory
 					item_remove(obj_item_manager.cur_recipe);
-					obj_item_manager.cur_recipe = undefined;
+					ds_list_clear(obj_item_manager.recipeList);
 					
 					obj_usagi.text_id = "usagi - complete";
 

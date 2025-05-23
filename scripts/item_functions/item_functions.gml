@@ -7,9 +7,11 @@ function item_add(_item){
 function item_remove(_item){
 	var _inv = obj_item_manager.inv;
 	for(var i = 0; i < array_length(_inv); i++){
-		if(_inv[i].name == _item.name){
-			array_delete(_inv, i, 1);
-			break;
+		if (is_array(_inv) && i < array_length(_inv) && is_struct(_inv[i]) && is_struct(_item)) {
+			if(_inv[i].name == _item.name){
+				array_delete(_inv, i, 1);
+				break;
+			}
 		}
 	}
 }
