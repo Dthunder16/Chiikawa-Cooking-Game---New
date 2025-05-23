@@ -18,8 +18,8 @@ hSpeedCam = hSpeed;
 vSpeedCam = vSpeed;
 
 //Check if cooking is finished
-if(global.done_cooking && !item_collected){
-	item_collected = true;
+if(global.done_cooking && !global.item_collected){
+	global.item_collected = true;
 	item_add(obj_item_manager.cur_recipe);
 }
 

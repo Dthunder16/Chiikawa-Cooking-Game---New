@@ -84,8 +84,6 @@ function scr_game_text(_text_id){
 			break;
 		
 			case "hachiware - yes":	
-				obj_item_manager.make_food_hachi = true;
-				
 				if(!ds_list_empty(obj_item_manager.recipeList)){
 					scr_text("Oh! It seems like you are helping usagi right now.", "hachiware");
 					scr_text("Come back when you are done!", "hachiware");
@@ -135,13 +133,11 @@ function scr_game_text(_text_id){
 			    scr_text("They say an apple a day keeps the doctor away, but does apple ice cream work too?", "hachiware");
 			    
 				//Remove Recipe from Recipe List
-				//ds_list_delete(obj_item_manager.recipeList, global.food.apple_icecream);
+				ds_list_clear(obj_item_manager.recipeList);
 				
 				//Remove Item from Inventory
 				item_remove(obj_item_manager.cur_recipe);
 				
-				//Remove Recipe
-				ds_list_clear(obj_item_manager.recipeList);
 				obj_hachiware.text_id = "hachiware - complete";
 
 			    break;
@@ -227,9 +223,6 @@ function scr_game_text(_text_id){
 					global.done_cooking = true;
 				    scr_text("YATAAAAAA!", "usagi");
 				    scr_text("Time to eat everything!!!", "usagi");
-			    
-					//Remove Recipe from Recipe List
-					ds_list_delete(obj_item_manager.recipeList, global.food.purin);
 				
 					//Remove Item from Inventory
 					item_remove(obj_item_manager.cur_recipe);

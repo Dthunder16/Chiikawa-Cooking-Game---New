@@ -34,6 +34,7 @@ if(bar_collide){
 	
 	if (obj_progress_bar.overlap_time == 200){
 		global.done_cooking = true;
+		global.item_collected = false;
 		audio_stop_sound(bgm_cooking);
 		audio_resume_sound(bgm_default);
 		room_goto(rm_game);
